@@ -25,7 +25,6 @@ const ampAdProps = ({ id, pageType, service }) => ({
   type: 'doubleclick',
   width: '970',
   height: '250',
-  'data-aax_size': ['320x250', '970x250'],
   'data-slot': '/4817/bbccom.test.site.amp.news',
   'data-amp-slot-index': '0',
   'data-a4a-upgrade-type': 'amp-ad-network-doubleclick-impl',
