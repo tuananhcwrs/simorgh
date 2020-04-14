@@ -144,7 +144,7 @@ export const service = {
         listen: '청취',
         watch: '감상하기',
         liveLabel: 'LIVE',
-        nextLabel: 'NEXT',
+        nextLabel: '다음',
         previousRadioShow: 'Previous radio show',
         nextRadioShow: 'Next radio show',
         duration: 'Duration',

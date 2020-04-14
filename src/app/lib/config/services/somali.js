@@ -163,7 +163,7 @@ export const service = {
         listen: 'Listen',
         watch: 'Watch',
         liveLabel: 'TOOS',
-        nextLabel: 'NEXT',
+        nextLabel: 'XIGA',
         previousRadioShow: 'Previous radio show',
         nextRadioShow: 'Next radio show',
         duration: 'Duration',

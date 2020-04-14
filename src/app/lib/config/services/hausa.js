@@ -155,7 +155,7 @@ export const service = {
         listen: 'Listen',
         watch: 'Kalla',
         liveLabel: 'KAI TSAYE',
-        nextLabel: 'NEXT',
+        nextLabel: 'NA GABA',
         previousRadioShow: 'Previous radio show',
         nextRadioShow: 'Next radio show',
         duration: 'Duration',
