@@ -202,6 +202,42 @@
         "type": "media"
       },
       {
+        "text": "Includes: VisJo",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "required": false,
+        "tile": "Include from VisJo",
+        "href": "/include/newsspec/22766-democrats/mundo/app?responsive=true&newsapps=true&app-image=https://news.files.bbci.co.uk/vj/live/idt-images/image-slider-test/app_launcher2_640-mundo_aldmj.png&app-clickable=true&amp-clickable=true&amp-image-height=360&amp-image-width=640&amp-image=https://news.files.bbci.co.uk/vj/live/idt-images/image-slider-test/app_launcher2_640-mundo_aldmj.png",
+        "platform": "highweb",
+        "type": "include"
+      },
+      {
+        "text": "Includes: IDT2",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "required": false,
+        "tile": "IDT2 Include",
+        "href": "/idt2/cb1a5166-cfbb-4520-bdac-6159299acff6",
+        "platform": "highweb",
+        "type": "include"
+      },
+      {
+        "text": "Includes: IDT1: A quiz!",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "required": false,
+        "tile": "A quiz!",
+        "href": "/indepthtoolkit/quizzes/sistema_solar_Quiz_Mundo/syndicated?app-clickable=true&app-image=http%3A%2F%2Fnews.files.bbci.co.uk%2Fvj%2Flive%2Fidt-images%2Fquizzes-quiz_cta%2Fstart_geh2q.png",
+        "platform": "highweb",
+        "type": "include"
+      },
+      {
         "text": "This is a heading!",
         "markupType": "plain_text",
         "type": "heading"
