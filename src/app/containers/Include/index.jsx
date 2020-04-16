@@ -74,6 +74,10 @@ const IncludeContainer = ({ html = '', type }) => {
   return (
     <GridItemConstrainedMedium>
       <Link to="/pidgin/world-23252817">Pidgin STY</Link>
+      <div>
+        <Link to="/mundo/23263889">Mundo STY</Link>
+      </div>
+
       <div
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
