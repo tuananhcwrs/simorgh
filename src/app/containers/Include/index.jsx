@@ -1,6 +1,7 @@
 /* eslint-disable react/no-danger */
 import React, { useRef, useEffect } from 'react';
 import { string } from 'prop-types';
+import { Link } from 'react-router-dom';
 import { GridItemConstrainedMedium } from '#lib/styledGrid';
 import useToggle from '#hooks/useToggle';
 import {
@@ -55,6 +56,11 @@ const IncludeContainer = ({ html = '', type }) => {
 
   return (
     <GridItemConstrainedMedium>
+      <Link to="/pidgin/world-23252817">Pidgin STY</Link>
+      <div>
+        <Link to="/mundo/23263889">Mundo STY</Link>
+      </div>
+
       <div
         suppressHydrationWarning
         dangerouslySetInnerHTML={{

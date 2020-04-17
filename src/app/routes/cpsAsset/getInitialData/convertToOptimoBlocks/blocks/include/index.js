@@ -33,6 +33,7 @@ const fetchMarkup = async (url) => {
         {
           event: 'include_fetch_error',
           message: e,
+          url,
         },
         null,
         2,
