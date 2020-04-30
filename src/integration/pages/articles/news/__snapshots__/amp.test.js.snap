@@ -90,13 +90,15 @@ exports[`AMP Articles I can see an image with a caption 2`] = `"Image caption, T
 
 exports[`AMP Articles I can see an image with non-BBC copyright 1`] = `"Image source, Getty Images"`;
 
-exports[`AMP Articles I can see an inline link: the BBC Weather homepage 1`] = `"https://www.bbc.co.uk/weather"`;
-
 exports[`AMP Articles I can see the headline 1`] = `"This is the headline of this test article"`;
 
 exports[`AMP Articles I can see the subheadline 1`] = `"This is a subheadline block"`;
 
 exports[`AMP Articles I can see the timestamp 1`] = `"15 August 2019"`;
+
+exports[`AMP Articles Links: I can see a link to another article: This is a link to the Welsh version of this test article 1`] = `"/cymrufyw/articles/c06p32z9x2mo"`;
+
+exports[`AMP Articles Links: I can see a link: the BBC Weather homepage 1`] = `"https://www.bbc.co.uk/weather"`;
 
 exports[`AMP Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-72x72.png"`;
 

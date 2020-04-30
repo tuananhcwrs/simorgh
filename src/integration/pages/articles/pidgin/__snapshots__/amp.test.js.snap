@@ -92,13 +92,13 @@ exports[`AMP Articles I can see an image with a caption 2`] = `"Wetin we call di
 
 exports[`AMP Articles I can see an image with non-BBC copyright 1`] = `"Wia dis foto come from, Google"`;
 
-exports[`AMP Articles I can see an inline link: How Nigeria ruling APC Chairmo Oshiomhole chop suspension 1`] = `"http://www.bbc.com/pidgin/tori-50389601"`;
-
 exports[`AMP Articles I can see the headline 1`] = `"Adams Oshiomhole say 'I still be APC National Chairman'"`;
 
 exports[`AMP Articles I can see the subheadline 1`] = `"How e bin take start"`;
 
 exports[`AMP Articles I can see the timestamp 1`] = `"4 March 2020"`;
+
+exports[`AMP Articles Links: I can see a link: How Nigeria ruling APC Chairmo Oshiomhole chop suspension 1`] = `"http://www.bbc.com/pidgin/tori-50389601"`;
 
 exports[`AMP Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/pidgin/images/icons/icon-72x72.png"`;
 

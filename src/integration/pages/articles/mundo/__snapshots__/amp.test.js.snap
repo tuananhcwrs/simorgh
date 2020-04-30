@@ -92,13 +92,13 @@ exports[`AMP Articles I can see an image with a caption 2`] = `"Pie de foto, Est
 
 exports[`AMP Articles I can see an image with non-BBC copyright 1`] = `"Fuente de la imagen, Getty Images"`;
 
-exports[`AMP Articles I can see an inline link: BBC Weather 1`] = `"https://www.bbc.co.uk/weather"`;
-
 exports[`AMP Articles I can see the headline 1`] = `"Este es el titular de este artículo de prueba."`;
 
 exports[`AMP Articles I can see the subheadline 1`] = `"Este es un bloque de subtítulos"`;
 
 exports[`AMP Articles I can see the timestamp 1`] = `"4 octubre 2019"`;
+
+exports[`AMP Articles Links: I can see a link: BBC Weather 1`] = `"https://www.bbc.co.uk/weather"`;
 
 exports[`AMP Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/mundo/images/icons/icon-72x72.png"`;
 

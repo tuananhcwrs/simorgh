@@ -46,12 +46,28 @@ export default () => {
     expect(paragraphEl.textContent).toMatchSnapshot();
   });
 
-  it('I can see an inline link', () => {
-    const linkEl = document.querySelector('main a');
+  describe('Links:', () => {
+    it('I can see a link', () => {
+      const linkEl = document.querySelector('main a');
 
-    expect(linkEl).toBeInTheDocument();
-    expect(linkEl.textContent).toBeTruthy();
-    expect(linkEl.getAttribute('href')).toMatchSnapshot(linkEl.textContent);
+      expect(linkEl).toBeInTheDocument();
+      expect(linkEl.textContent).toBeTruthy();
+      expect(linkEl.getAttribute('href')).toMatchSnapshot(linkEl.textContent);
+    });
+
+    const linkToAnotherArticleEl = document.querySelector(
+      'a[href*="articles"]',
+    );
+
+    if (linkToAnotherArticleEl) {
+      it('I can see a link to another article', () => {
+        expect(linkToAnotherArticleEl).toBeInTheDocument();
+        expect(linkToAnotherArticleEl.textContent).toBeTruthy();
+        expect(linkToAnotherArticleEl.getAttribute('href')).toMatchSnapshot(
+          linkToAnotherArticleEl.textContent,
+        );
+      });
+    }
   });
 
   it('I can see an image with a caption', () => {
