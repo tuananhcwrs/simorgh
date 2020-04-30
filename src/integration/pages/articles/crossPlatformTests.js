@@ -86,6 +86,21 @@ export default () => {
       expect(imageEl.getAttribute('src')).toMatchSnapshot(
         imageCaptionEl.textContent,
       );
+
+      // TODO: ensure no copyright (copyright holder is BBC)
+
+        // TODO: check background image??
+      /**
+       * cy.get('figure div div div')
+            .eq(0)
+            .should(el => {
+              expect(el).to.have.css(
+                'background-image',
+                `url("data:image/svg+xml;base64,${BBC_BLOCKS}")`,
+              );
+            });
+       */
+
     });
 
     it('I can see an image with non-BBC copyright', () => {
