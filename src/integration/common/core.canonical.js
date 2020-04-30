@@ -40,7 +40,7 @@ export default () => {
     expect(ampHTMLLink.getAttribute('href')).toMatchSnapshot();
   });
 
-  it('SEO AMP attribute does not exist', () => {
+  it('AMP attribute should not exist', () => {
     const htmlEl = document.querySelector('html');
 
     expect(htmlEl.getAttribute('amp')).toBeNull();

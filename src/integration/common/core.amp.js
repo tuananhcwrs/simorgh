@@ -33,7 +33,7 @@ export default () => {
     ).toMatchSnapshot();
   });
 
-  it('SEO AMP attribute', () => {
+  it('AMP attribute', () => {
     const htmlEl = document.querySelector('html');
 
     expect(htmlEl.getAttribute('amp')).not.toBeNull();
