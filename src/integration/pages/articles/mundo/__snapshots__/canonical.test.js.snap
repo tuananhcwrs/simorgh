@@ -28,6 +28,8 @@ exports[`Canonical Articles Images: I can see an image with non-BBC copyright 1`
 
 exports[`Canonical Articles Links: I can see a link: BBC Weather 1`] = `"https://www.bbc.co.uk/weather"`;
 
+exports[`Canonical Articles Media Player I can see a caption below the placeholder 1`] = `"Título del video, Indonesians Mark Eid al-Adha Los indonesios marcan a Eid al-Adha en medio de terremotos en la región de Lombok"`;
+
 exports[`Canonical Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/mundo/images/icons/icon-72x72.png"`;
 
 exports[`Canonical Articles SEO Apple Touch Icon: 96x96 1`] = `"https://news.files.bbci.co.uk/include/articles/public/mundo/images/icons/icon-96x96.png"`;

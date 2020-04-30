@@ -1,3 +1,4 @@
+import { doc } from 'prettier';
 import { runCommonCrossPlatformTests } from '../../common';
 
 import { getMetaTagContent } from '../../common/SEO';
@@ -94,6 +95,25 @@ export default () => {
       expect(copyrightEl).toBeInTheDocument();
       expect(copyrightEl).toBeTruthy();
       expect(copyrightEl.textContent).toMatchSnapshot();
+    });
+  });
+
+  describe('Media Player', () => {
+    const mediaPlaceholder = document.querySelector(
+      'main figure div[class^="StyledVideoContainer"]',
+    );
+
+    it('I can see a placeholder', () => {
+      expect(mediaPlaceholder).toBeInTheDocument();
+    });
+
+    it('I can see a caption below the placeholder', () => {
+      const captionEl = mediaPlaceholder.parentElement.querySelector(
+        'figcaption',
+      );
+      expect(captionEl).toBeInTheDocument();
+      expect(captionEl.textContent).toBeTruthy();
+      expect(captionEl.textContent).toMatchSnapshot();
     });
   });
 };

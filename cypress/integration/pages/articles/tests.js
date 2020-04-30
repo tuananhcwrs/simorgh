@@ -1,9 +1,6 @@
 import appToggles from '../../../support/helpers/useAppToggles';
 import { getBlockByType, getBlockData } from './helpers';
 
-// TODO: Remove once we have inline link on article pages linking to another article page
-const serviceHasInlineLink = service => service === 'news';
-
 // For testing important features that differ between services, e.g. Timestamps.
 // We recommend using inline conditional logic to limit tests to services which differ.
 export const testsThatAlwaysRun = () => {};
