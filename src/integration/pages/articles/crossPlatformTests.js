@@ -70,26 +70,30 @@ export default () => {
     }
   });
 
-  it('I can see an image with a caption', () => {
-    const imageEl = document.querySelector(
-      'main figure img, main figure amp-img',
-    );
-    const imageCaptionEl = document.querySelector('main figure figcaption');
+  describe('Images:', () => {
+    it('I can see an image with a caption', () => {
+      const imageEl = document.querySelector(
+        'main figure img, main figure amp-img',
+      );
+      const imageCaptionEl = document.querySelector('main figure figcaption');
 
-    expect(imageEl).toBeInTheDocument();
-    expect(imageEl).toBeTruthy();
-    expect(imageEl.getAttribute('src')).toMatchSnapshot();
+      expect(imageEl).toBeInTheDocument();
+      expect(imageEl).toBeTruthy();
 
-    expect(imageCaptionEl).toBeInTheDocument();
-    expect(imageCaptionEl.textContent).toBeTruthy();
-    expect(imageCaptionEl.textContent).toMatchSnapshot();
-  });
+      expect(imageCaptionEl).toBeInTheDocument();
+      expect(imageCaptionEl.textContent).toBeTruthy();
 
-  it('I can see an image with non-BBC copyright', () => {
-    const copyrightEl = document.querySelector('main figure p[role="text"]');
+      expect(imageEl.getAttribute('src')).toMatchSnapshot(
+        imageCaptionEl.textContent,
+      );
+    });
 
-    expect(copyrightEl).toBeInTheDocument();
-    expect(copyrightEl).toBeTruthy();
-    expect(copyrightEl.textContent).toMatchSnapshot();
+    it('I can see an image with non-BBC copyright', () => {
+      const copyrightEl = document.querySelector('main figure p[role="text"]');
+
+      expect(copyrightEl).toBeInTheDocument();
+      expect(copyrightEl).toBeTruthy();
+      expect(copyrightEl.textContent).toMatchSnapshot();
+    });
   });
 };

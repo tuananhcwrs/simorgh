@@ -86,17 +86,15 @@ exports[`AMP Articles Header I can see the branding 1`] = `"BBC News, Mundo"`;
 
 exports[`AMP Articles I can see a paragraph 1`] = `"Hemos realizado cambios importantes a nuestra política de privacidad y cookies y queremos que sepas lo que esto significa para ti y tus datos."`;
 
-exports[`AMP Articles I can see an image with a caption 1`] = `"https://ichef.bbci.co.uk/news/640/cpsdevpb/ee58/test/4a2f4c00-e695-11e9-88d6-81aa2ccc6d4c.jpg"`;
-
-exports[`AMP Articles I can see an image with a caption 2`] = `"Pie de foto, Esta imagen de prueba, copyright BBC, muestra un mapa de Francia. La imagen está en los primeros tres bloques y tiene este título."`;
-
-exports[`AMP Articles I can see an image with non-BBC copyright 1`] = `"Fuente de la imagen, Getty Images"`;
-
 exports[`AMP Articles I can see the headline 1`] = `"Este es el titular de este artículo de prueba."`;
 
 exports[`AMP Articles I can see the subheadline 1`] = `"Este es un bloque de subtítulos"`;
 
 exports[`AMP Articles I can see the timestamp 1`] = `"4 octubre 2019"`;
+
+exports[`AMP Articles Images: I can see an image with a caption: Pie de foto, Esta imagen de prueba, copyright BBC, muestra un mapa de Francia. La imagen está en los primeros tres bloques y tiene este título. 1`] = `"https://ichef.bbci.co.uk/news/640/cpsdevpb/ee58/test/4a2f4c00-e695-11e9-88d6-81aa2ccc6d4c.jpg"`;
+
+exports[`AMP Articles Images: I can see an image with non-BBC copyright 1`] = `"Fuente de la imagen, Getty Images"`;
 
 exports[`AMP Articles Links: I can see a link: BBC Weather 1`] = `"https://www.bbc.co.uk/weather"`;
 

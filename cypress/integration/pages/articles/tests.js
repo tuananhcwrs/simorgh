@@ -13,22 +13,6 @@ export const testsThatFollowSmokeTestConfig = ({ service, pageType }) => {
   describe(`Running tests for ${service} ${pageType}`, () => {
     describe(`Article Body`, () => {
 
-      if (serviceHasInlineLink(service) && Cypress.env('APP_ENV') === 'local') {
-        it('should have an inlink link to an article page', () => {
-          cy.get('[class^="InlineLink"]')
-            .eq(1)
-            .should('have.attr', 'href')
-            .then(href => {
-              cy.request({
-                url: href,
-                failOnStatusCode: false,
-              }).then(resp => {
-                expect(resp.status).to.not.equal(404);
-              });
-            });
-        });
-      }
-
       // `appToggles` tells us whether a feature is toggled on or off in the current environment.
       if (appToggles.mediaPlayer.enabled) {
         describe('Media Player', () => {

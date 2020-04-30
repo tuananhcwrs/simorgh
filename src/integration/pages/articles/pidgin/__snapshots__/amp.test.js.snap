@@ -86,17 +86,15 @@ exports[`AMP Articles Header I can see the branding 1`] = `"BBC News, Pidgin"`;
 
 exports[`AMP Articles I can see a paragraph 1`] = `"We don make some important changes to our Privacy and Cookies Policy and we wan make you know wetin dis one mean for you and your personal infomation."`;
 
-exports[`AMP Articles I can see an image with a caption 1`] = `"https://ichef.bbci.co.uk/news/640/cpsprodpb/1317C/production/_111140287_oshiobaba.jpg"`;
-
-exports[`AMP Articles I can see an image with a caption 2`] = `"Wetin we call dis foto, APC Chairman Adams Oshiomhole don be Govnor of Edo State before"`;
-
-exports[`AMP Articles I can see an image with non-BBC copyright 1`] = `"Wia dis foto come from, Google"`;
-
 exports[`AMP Articles I can see the headline 1`] = `"Adams Oshiomhole say 'I still be APC National Chairman'"`;
 
 exports[`AMP Articles I can see the subheadline 1`] = `"How e bin take start"`;
 
 exports[`AMP Articles I can see the timestamp 1`] = `"4 March 2020"`;
+
+exports[`AMP Articles Images: I can see an image with a caption: Wetin we call dis foto, APC Chairman Adams Oshiomhole don be Govnor of Edo State before 1`] = `"https://ichef.bbci.co.uk/news/640/cpsprodpb/1317C/production/_111140287_oshiobaba.jpg"`;
+
+exports[`AMP Articles Images: I can see an image with non-BBC copyright 1`] = `"Wia dis foto come from, Google"`;
 
 exports[`AMP Articles Links: I can see a link: How Nigeria ruling APC Chairmo Oshiomhole chop suspension 1`] = `"http://www.bbc.com/pidgin/tori-50389601"`;
 

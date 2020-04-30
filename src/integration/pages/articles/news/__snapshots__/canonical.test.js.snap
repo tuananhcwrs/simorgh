@@ -14,17 +14,15 @@ exports[`Canonical Articles Header I can see the branding 1`] = `"BBC News"`;
 
 exports[`Canonical Articles I can see a paragraph 1`] = `"This test image, copyright BBC, shows a map of France.  The image is in the first three blocks and has this caption."`;
 
-exports[`Canonical Articles I can see an image with a caption 1`] = `"https://ichef.bbci.co.uk/news/640/cpsdevpb/d380/test/3f9cdd70-bf4e-11e9-9369-d99c892e3f2d.jpg"`;
-
-exports[`Canonical Articles I can see an image with a caption 2`] = `"Image caption, This test image, copyright BBC, shows a map of France.  The image is in the first three blocks and has this caption."`;
-
-exports[`Canonical Articles I can see an image with non-BBC copyright 1`] = `"Image source, Getty Images"`;
-
 exports[`Canonical Articles I can see the headline 1`] = `"This is the headline of this test article"`;
 
 exports[`Canonical Articles I can see the subheadline 1`] = `"This is a subheadline block"`;
 
 exports[`Canonical Articles I can see the timestamp 1`] = `"15 August 2019"`;
+
+exports[`Canonical Articles Images: I can see an image with a caption: Image caption, This test image, copyright BBC, shows a map of France.  The image is in the first three blocks and has this caption. 1`] = `"https://ichef.bbci.co.uk/news/640/cpsdevpb/d380/test/3f9cdd70-bf4e-11e9-9369-d99c892e3f2d.jpg"`;
+
+exports[`Canonical Articles Images: I can see an image with non-BBC copyright 1`] = `"Image source, Getty Images"`;
 
 exports[`Canonical Articles Links: I can see a link to another article: This is a link to the Welsh version of this test article 1`] = `"/cymrufyw/articles/c06p32z9x2mo"`;
 
