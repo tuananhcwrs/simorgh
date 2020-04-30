@@ -19,4 +19,18 @@ export default () => {
       expect(playButtonEl.textContent).toMatchSnapshot();
     });
   });
+
+  describe('Images:', () => {
+    it('I can see an image placeholder which is lazy loaded', () => {
+      const lazyLoadedImageEl = document.querySelector(
+        'main figure div[class="lazyload-placeholder"]',
+      );
+
+      expect(lazyLoadedImageEl).toBeInTheDocument();
+
+      const imageEl = lazyLoadedImageEl.parentElement.querySelector('noscript');
+      expect(imageEl).toBeInTheDocument();
+      expect(imageEl.innerHTML).toContain('<img');
+    });
+  })
 };
