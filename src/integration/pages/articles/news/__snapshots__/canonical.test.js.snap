@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Canonical Articles A11y Banner should contain product and localised service name  1`] = `"BBC News"`;
+
+exports[`Canonical Articles A11y I can see the skip to content link 1`] = `"Skip to content"`;
+
+exports[`Canonical Articles Analytics ATI: https://logws1363.ati-host.net? 1`] = `"https://logws1363.ati-host.net?s=598286&s2=64&p=news.articles.cn7k01xp8kxo.page&x1=[urn:bbc:optimo:cn7k01xp8kxo]&x2=[responsive]&x3=[news]&x4=[en-gb]&x7=[article]&x8=[simorgh-nojs]&x9=[This+is+the+SEO+headline+of+this+test+article]&x11=[2019-08-15T11:23:31.077Z]&x12=[2019-08-15T11:23:31.077Z]"`;
+
+exports[`Canonical Articles Footer I can click on the BBC branding and it would take me to the homepage 1`] = `"/news"`;
+
+exports[`Canonical Articles Footer I can see the footer copyright and external linking text 1`] = `"© 2020 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking."`;
+
+exports[`Canonical Articles Header I can see the branding 1`] = `"BBC News"`;
+
+exports[`Canonical Articles I can see a paragraph 1`] = `"This test image, copyright BBC, shows a map of France.  The image is in the first three blocks and has this caption."`;
+
+exports[`Canonical Articles I can see an image with a caption 1`] = `"https://ichef.bbci.co.uk/news/640/cpsdevpb/d380/test/3f9cdd70-bf4e-11e9-9369-d99c892e3f2d.jpg"`;
+
+exports[`Canonical Articles I can see an image with a caption 2`] = `"Image caption, This test image, copyright BBC, shows a map of France.  The image is in the first three blocks and has this caption."`;
+
+exports[`Canonical Articles I can see an image with non-BBC copyright 1`] = `"Image source, Getty Images"`;
+
+exports[`Canonical Articles I can see an inline link: the BBC Weather homepage 1`] = `"https://www.bbc.co.uk/weather"`;
+
+exports[`Canonical Articles I can see the headline 1`] = `"This is the headline of this test article"`;
+
+exports[`Canonical Articles I can see the subheadline 1`] = `"This is a subheadline block"`;
+
+exports[`Canonical Articles I can see the timestamp 1`] = `"15 August 2019"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-72x72.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 96x96 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-96x96.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 128x128 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-128x128.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 144x144 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-144x144.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 152x152 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-152x152.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 192x192 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-192x192.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 384x384 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-384x384.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: 512x512 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-512x512.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Icon: default 1`] = `"http://localhost:7080/news/images/icons/icon-192x192.png"`;
+
+exports[`Canonical Articles SEO Apple Touch Startup Image 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-512x512.png"`;
+
+exports[`Canonical Articles SEO Article author 1`] = `"https://www.facebook.com/bbcnews"`;
+
+exports[`Canonical Articles SEO Canonical link 1`] = `"http://localhost:7080/news/articles/cn7k01xp8kxo"`;
+
+exports[`Canonical Articles SEO Dir attribute 1`] = `"ltr"`;
+
+exports[`Canonical Articles SEO FB admins 1`] = `"100004154058350"`;
+
+exports[`Canonical Articles SEO FB app ID 1`] = `"1609039196070050"`;
+
+exports[`Canonical Articles SEO Heading level 1 1`] = `"This is the headline of this test article"`;
+
+exports[`Canonical Articles SEO Icons : 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-72x72.png"`;
+
+exports[`Canonical Articles SEO Icons : 96x96 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-96x96.png"`;
+
+exports[`Canonical Articles SEO Icons : 192x192 1`] = `"https://news.files.bbci.co.uk/include/articles/public/news/images/icons/icon-192x192.png"`;
+
+exports[`Canonical Articles SEO Lang attribute 1`] = `"en-gb"`;
+
+exports[`Canonical Articles SEO Linked data 1`] = `
+Object {
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": Object {
+    "@type": "NewsMediaOrganization",
+    "logo": Object {
+      "@type": "ImageObject",
+      "height": 576,
+      "url": "https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png",
+      "width": 1024,
+    },
+    "name": "BBC News",
+    "noBylinesPolicy": "https://www.bbc.com/news/help-41670342#authorexpertise",
+  },
+  "dateModified": "2019-08-15T11:23:31.077Z",
+  "datePublished": "2019-08-15T11:23:31.077Z",
+  "headline": "This is the SEO headline of this test article",
+  "image": Object {
+    "@type": "ImageObject",
+    "height": 576,
+    "url": "https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png",
+    "width": 1024,
+  },
+  "mainEntityOfPage": Object {
+    "@id": "http://localhost:7080/news/articles/cn7k01xp8kxo",
+    "@type": "WebPage",
+    "name": "This is the SEO headline of this test article",
+  },
+  "publisher": Object {
+    "@type": "NewsMediaOrganization",
+    "logo": Object {
+      "@type": "ImageObject",
+      "height": 576,
+      "url": "https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png",
+      "width": 1024,
+    },
+    "name": "BBC News",
+    "publishingPrinciples": "https://www.bbc.com/news/help-41670342",
+  },
+  "thumbnailUrl": "https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png",
+  "url": "http://localhost:7080/news/articles/cn7k01xp8kxo",
+}
+`;
+
+exports[`Canonical Articles SEO OG description 1`] = `"This is the SEO headline of this test article"`;
+
+exports[`Canonical Articles SEO OG image 1`] = `"https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png"`;
+
+exports[`Canonical Articles SEO OG image alt 1`] = `"BBC News"`;
+
+exports[`Canonical Articles SEO OG locale 1`] = `"en_GB"`;
+
+exports[`Canonical Articles SEO OG site name 1`] = `"BBC News"`;
+
+exports[`Canonical Articles SEO OG title 1`] = `"This is the SEO headline of this test article - BBC News"`;
+
+exports[`Canonical Articles SEO OG type 1`] = `"article"`;
+
+exports[`Canonical Articles SEO OG url 1`] = `"http://localhost:7080/news/articles/cn7k01xp8kxo"`;
+
+exports[`Canonical Articles SEO Page title 1`] = `"This is the SEO headline of this test article - BBC News"`;
+
+exports[`Canonical Articles SEO Robots meta tag 1`] = `"noodp,noydir"`;
+
+exports[`Canonical Articles SEO Twitter card 1`] = `"summary_large_image"`;
+
+exports[`Canonical Articles SEO Twitter creator 1`] = `"@BBCNews"`;
+
+exports[`Canonical Articles SEO Twitter description 1`] = `"This is the SEO headline of this test article"`;
+
+exports[`Canonical Articles SEO Twitter image alt 1`] = `"BBC News"`;
+
+exports[`Canonical Articles SEO Twitter image src 1`] = `"https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png"`;
+
+exports[`Canonical Articles SEO Twitter site 1`] = `"@BBCNews"`;
+
+exports[`Canonical Articles SEO Twitter title 1`] = `"This is the SEO headline of this test article - BBC News"`;

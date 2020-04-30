@@ -26,11 +26,14 @@ export default () => {
         expect(bannerTextEl.textContent).toMatchSnapshot();
       });
 
-      it('with lang', () => {
-        const productLang = bannerTextEl.querySelector('span');
-        expect(productLang).toBeInTheDocument();
-        expect(productLang.getAttribute('lang')).toMatchSnapshot();
-      });
+      const productLang = bannerTextEl.querySelector('span');
+
+      if (productLang) {
+        it('with lang', () => {
+          expect(productLang).toBeInTheDocument();
+          expect(productLang.getAttribute('lang')).toMatchSnapshot();
+        });
+      }
     });
   });
 };

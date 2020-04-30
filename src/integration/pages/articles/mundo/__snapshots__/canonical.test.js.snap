@@ -14,9 +14,21 @@ exports[`Canonical Articles Footer I can see the footer copyright and external l
 
 exports[`Canonical Articles Header I can see the branding 1`] = `"BBC News, Mundo"`;
 
+exports[`Canonical Articles I can see a paragraph 1`] = `"Esta imagen de prueba, copyright BBC, muestra un mapa de Francia. La imagen está en los primeros tres bloques y tiene este título."`;
+
 exports[`Canonical Articles I can see an image with a caption 1`] = `"https://ichef.bbci.co.uk/news/640/cpsdevpb/ee58/test/4a2f4c00-e695-11e9-88d6-81aa2ccc6d4c.jpg"`;
 
 exports[`Canonical Articles I can see an image with a caption 2`] = `"Pie de foto, Esta imagen de prueba, copyright BBC, muestra un mapa de Francia. La imagen está en los primeros tres bloques y tiene este título."`;
+
+exports[`Canonical Articles I can see an image with non-BBC copyright 1`] = `"Fuente de la imagen, Getty Images"`;
+
+exports[`Canonical Articles I can see an inline link: BBC Weather 1`] = `"https://www.bbc.co.uk/weather"`;
+
+exports[`Canonical Articles I can see the headline 1`] = `"Este es el titular de este artículo de prueba."`;
+
+exports[`Canonical Articles I can see the subheadline 1`] = `"Este es un bloque de subtítulos"`;
+
+exports[`Canonical Articles I can see the timestamp 1`] = `"4 octubre 2019"`;
 
 exports[`Canonical Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/mundo/images/icons/icon-72x72.png"`;
 
@@ -37,6 +49,8 @@ exports[`Canonical Articles SEO Apple Touch Icon: 512x512 1`] = `"https://news.f
 exports[`Canonical Articles SEO Apple Touch Icon: default 1`] = `"http://localhost:7080/mundo/images/icons/icon-192x192.png"`;
 
 exports[`Canonical Articles SEO Apple Touch Startup Image 1`] = `"https://news.files.bbci.co.uk/include/articles/public/mundo/images/icons/icon-512x512.png"`;
+
+exports[`Canonical Articles SEO Article author 1`] = `"https://www.facebook.com/bbcnews"`;
 
 exports[`Canonical Articles SEO Canonical link 1`] = `"http://localhost:7080/mundo/articles/ce42wzqr2mko"`;
 
