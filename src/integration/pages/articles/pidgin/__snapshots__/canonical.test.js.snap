@@ -30,6 +30,8 @@ exports[`Canonical Articles Links: I can see a link: the BBC Weather homepage 1`
 
 exports[`Canonical Articles Media Player I can see a caption below the placeholder 1`] = `"Wetin we call dis Video, This is a video block containing a video about ants"`;
 
+exports[`Canonical Articles Media Player I can see a play button with guidance, video caption and duration 1`] = `"Contains strong language and adult humour. Play video, \\"Five things ants can teach us about management\\", Duration 3,11"`;
+
 exports[`Canonical Articles SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/pidgin/images/icons/icon-72x72.png"`;
 
 exports[`Canonical Articles SEO Apple Touch Icon: 96x96 1`] = `"https://news.files.bbci.co.uk/include/articles/public/pidgin/images/icons/icon-96x96.png"`;
