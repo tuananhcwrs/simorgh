@@ -22,6 +22,8 @@ exports[`Canonical Live Radio Media player embed A11y I can read the media playe
 
 exports[`Canonical Live Radio Media player embed I can see the media player embed 1`] = `"https://polling.test.bbc.co.uk/ws/av-embeds/media/bbc_korean_radio/liveradio/ko?morph_env=live"`;
 
+exports[`Canonical Live Radio SEO AMP HTML 1`] = `"http://localhost:7080/korean/bbc_korean_radio/liveradio.amp"`;
+
 exports[`Canonical Live Radio SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/korean/images/icons/icon-72x72.png"`;
 
 exports[`Canonical Live Radio SEO Apple Touch Icon: 96x96 1`] = `"https://news.files.bbci.co.uk/include/articles/public/korean/images/icons/icon-96x96.png"`;

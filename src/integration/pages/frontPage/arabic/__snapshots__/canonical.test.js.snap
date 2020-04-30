@@ -14,6 +14,8 @@ exports[`Canonical Front Page Footer I can see the footer copyright and external
 
 exports[`Canonical Front Page Header I can see the branding 1`] = `"BBC News, عربي"`;
 
+exports[`Canonical Front Page SEO AMP HTML 1`] = `"http://localhost:7080/arabic.amp"`;
+
 exports[`Canonical Front Page SEO Apple Touch Icon: 72x72 1`] = `"https://news.files.bbci.co.uk/include/articles/public/arabic/images/icons/icon-72x72.png"`;
 
 exports[`Canonical Front Page SEO Apple Touch Icon: 96x96 1`] = `"https://news.files.bbci.co.uk/include/articles/public/arabic/images/icons/icon-96x96.png"`;

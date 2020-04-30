@@ -31,4 +31,18 @@ export default () => {
 
     expect(serviceScripts.length).toBe(1);
   });
+
+  it('SEO AMP HTML', () => {
+    const ampHTMLLink = document.querySelector('head link[rel="amphtml"]');
+
+    expect(ampHTMLLink).toBeInTheDocument();
+    expect(ampHTMLLink.getAttribute('href')).toBeTruthy();
+    expect(ampHTMLLink.getAttribute('href')).toMatchSnapshot();
+  });
+
+  it('SEO AMP attribute does not exist', () => {
+    const htmlEl = document.querySelector('html');
+
+    expect(htmlEl.getAttribute('amp')).toBeNull();
+  });
 };
