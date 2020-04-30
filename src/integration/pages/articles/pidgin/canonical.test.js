@@ -1,6 +1,6 @@
 /**
  * @service pidgin
- * @pathname /pidgin/tori-51745682
+ * @pathname /pidgin/articles/cwl08rd38l6o
  */
 
 import runCrossPlatformTests from '../crossPlatformTests';
