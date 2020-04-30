@@ -21,7 +21,18 @@ export default () => {
   });
 
   describe('Images:', () => {
-    it('I can see an image placeholder which is lazy loaded', () => {
+    it('I can see an image which is not lazy-loaded', () => {
+      const imageEl = document.querySelector(
+        'main figure div[class^="ImagePlaceholder"] img',
+      );
+
+      expect(imageEl).toBeInTheDocument();
+
+      const noScriptEl = imageEl.parentElement.querySelector('noscript');
+      expect(noScriptEl).toBeNull();
+    });
+
+    it('I can see an image placeholder which is lazy-loaded', () => {
       const lazyLoadedImageEl = document.querySelector(
         'main figure div[class="lazyload-placeholder"]',
       );
@@ -32,5 +43,5 @@ export default () => {
       expect(imageEl).toBeInTheDocument();
       expect(imageEl.innerHTML).toContain('<img');
     });
-  })
+  });
 };
