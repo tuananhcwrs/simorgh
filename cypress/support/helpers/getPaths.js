@@ -1,7 +1,7 @@
-import config from '../config/services';
-import getAppEnv from './getAppEnv';
+const config = require('../config/services');
+const getAppEnv = require('./getAppEnv');
 
-export default (service, pageType) => {
+module.exports = (service, pageType) => {
   const { environments = {} } = config[service].pageTypes[pageType];
   const environment = environments[getAppEnv()];
   return environment && environment.enabled ? environment.paths : [];

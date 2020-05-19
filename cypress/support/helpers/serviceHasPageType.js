@@ -1,5 +1,5 @@
-import getPaths from './getPaths';
+const getPaths = require('./getPaths');
 
-export default (service, pageType) => {
+module.exports = (service, pageType) => {
   return getPaths(service, pageType).length > 0;
 };
