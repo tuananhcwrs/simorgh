@@ -38,6 +38,13 @@ const getUrls = () => {
         });
       });
   });
+
+  // urls.push(
+  //   'https://www.bbc.com/ukchina/simp/cool_britannia/britain_focus',
+  //   'https://www.bbc.com/ukrainian/blogs',
+  //   'https://www.bbc.com/zhongwen/simp/51222586',
+  // );
+
   return urls;
 };
 
@@ -45,40 +52,42 @@ const checkUrls = async () => {
   const urlsWithFallback = [];
   const errorMessages = [];
 
-  await Promise.allSettled(getUrls().map(url => fetch(url, { method: 'HEAD' })))
-    // .catch(console.error)
-    .then(responses => {
-      responses.map(response => {
-        if (response.value) {
-          const { url, status, headers } = response.value;
-          if (status === 200) {
-            if (headers._headers['x-mfa']) {
-              urlsWithFallback.push(url);
-            } else {
-              console.log(green(`✓ ${url}`));
-            }
+  await Promise.allSettled(
+    getUrls().map(url => fetch(url, { method: 'HEAD' })),
+  ).then(responses => {
+    responses.map(response => {
+      if (response.value) {
+        const { url, status, headers } = response.value;
+        if (status === 200) {
+          if (headers._headers['x-mfa']) {
+            urlsWithFallback.push(url);
           } else {
-            errorMessages.push(red(`✗ ${url} returned ${status} status`));
+            console.log(green(`✓ ${url}`));
           }
         } else {
-          errorMessages.push(grey(`✗ ${response.reason.message}`));
+          errorMessages.push(red(`✗ ${url} returned ${status} status`));
         }
-      });
+      } else {
+        errorMessages.push(grey(`✗ ${JSON.stringify(response.reason)}`));
+      }
     });
+  });
 
-  if (errorMessages.length > 0) {
-    console.error(errorMessages.join('\n'));
-  }
-
-  return urlsWithFallback;
+  return { urlsWithFallback, errorMessages };
 };
 
 const run = async () => {
-  const urlsWithFallback = await checkUrls();
+  const { urlsWithFallback, errorMessages } = await checkUrls();
 
   if (urlsWithFallback.length > 0) {
-    console.error(`Fallbacks detected: \n${urlsWithFallback.join('\n')}`);
+    console.error(
+      `\nFallbacks detected: \n\n${red(urlsWithFallback.join('\n'))}`,
+    );
     process.exit(1);
+  }
+
+  if (errorMessages.length > 0) {
+    console.error(`\nErrors: \n\n${red(errorMessages.join('\n'))}`);
   }
 };
 
