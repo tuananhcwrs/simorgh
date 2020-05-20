@@ -39,12 +39,6 @@ const getUrls = () => {
       });
   });
 
-  // urls.push(
-  //   'https://www.bbc.com/ukchina/simp/cool_britannia/britain_focus',
-  //   'https://www.bbc.com/ukrainian/blogs',
-  //   'https://www.bbc.com/zhongwen/simp/51222586',
-  // );
-
   return urls;
 };
 
