@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "analyticsLabels": {
+      "counterName": "gahuza.story.49116789.page",
+      "cps_asset_id": "49116789",
+      "cps_asset_type": "sty"
+    },
+    "blockTypes": [
+      "image",
+      "paragraph",
+      "include",
+      "list"
+    ],
+    "createdBy": "gahuza-v6",
+    "firstPublished": 1564067960000,
+    "id": "urn:bbc:ares::asset:gahuza/49116789",
+    "includeComments": false,
+    "language": "rw",
+    "lastPublished": 1564067960000,
+    "lastUpdated": 1589971905206,
+    "locators": {
+      "assetId": "49116789",
+      "assetUri": "/gahuza/49116789",
+      "cpsUrn": "urn:bbc:content:assetUri:gahuza/49116789",
+      "curie": "http://www.bbc.co.uk/asset/e0b5809f-c770-ec46-bd4e-2d6247e872f9"
+    },
+    "options": {
+      "allowAdvertising": true,
+      "allowDateStamp": true,
+      "allowHeadline": true,
+      "allowPrintingSharingLinks": true,
+      "allowRelatedStoriesBox": true,
+      "allowRightHandSide": true,
+      "hasContentWarning": false,
+      "hasNewsTracker": false,
+      "includeComments": false,
+      "isBreakingNews": false,
+      "isFactCheck": false,
+      "isIgorSeoTagsEnabled": false,
+      "isKeyContent": false,
+      "suitableForSyndication": true
+    },
+    "passport": {
+      "campaigns": [
+        {
+          "campaignId": "5a988e3e39461b000e9dabfb",
+          "campaignName": "WS - Keep me on trend"
+        }
+      ],
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
+        "categoryName": "Feature"
+      },
+      "taggings": []
+    },
+    "tags": {
+      "about": [
+        {
+          "curationList": [
+            {
+              "curationId": "3df2e783-543e-4683-8a96-252a4206b3ef",
+              "curationType": "vivo-stream"
+            }
+          ],
+          "thingId": "3c3f3366-06ea-44fc-afa8-aa3bfac49a87",
+          "thingLabel": "Facebook",
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Facebook"
+          ],
+          "thingType": [
+            "core:Organisation",
+            "core:Thing",
+            "tagging:TagConcept"
+          ],
+          "thingUri": "http://www.bbc.co.uk/things/3c3f3366-06ea-44fc-afa8-aa3bfac49a87#id",
+          "topicId": "c8y94y216qjt",
+          "topicName": "Facebook"
+        },
+        {
+          "curationList": [
+            {
+              "curationId": "02b1c7ce-26bd-4b85-a263-84bbe87a5d4a",
+              "curationType": "vivo-stream"
+            }
+          ],
+          "thingId": "ea2c5d34-4279-4e06-b69a-e699321d7f9f",
+          "thingLabel": "Imbuga nkoranyambaga",
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Social_media",
+            "http://www.wikidata.org/entity/Q202833"
+          ],
+          "thingType": [
+            "tagging:TagConcept",
+            "core:Theme",
+            "core:Thing"
+          ],
+          "thingUri": "http://www.bbc.co.uk/things/ea2c5d34-4279-4e06-b69a-e699321d7f9f#id",
+          "topicId": "c340q41jw0yt",
+          "topicName": "Imbuga nkoranyambaga"
+        }
+      ]
+    },
+    "timestamp": 1564067960000,
+    "type": "STY",
+    "version": "v1.3.0"
+  },
+    "content": {
+      "blocks": [
+        {
+          "altText": "Facebook",
+          "caption": "Facebook",
+          "copyrightHolder": "Getty Images",
+          "height": 549,
+          "href": "http://c.files.bbci.co.uk/1018B/production/_108013956_0494ae53-026e-4cb0-b1a9-4b594ee01924.jpg",
+          "id": "108013956",
+          "path": "/cpsprodpb/1018B/production/_108013956_0494ae53-026e-4cb0-b1a9-4b594ee01924.jpg",
+          "positionHint": "full-width",
+          "subType": "body",
+          "type": "image",
+          "width": 976
+        },
+        {
+          "markupType": "plain_text",
+          "role": "introduction",
+          "text": "Facebook yaciwe amande ya miriyaridi zitanu mu ntumbero yo guhindura umuco wayo no kugabanya impungenge z'uko ico kigo gishobora kubandanya kudasonera ubuzima bwite bw'abanywanyi b'urwo rubuga.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ico kigo cavuze ko amakuru yaco ku gikoresho kigaragaza uburyo amanomero ya telefone yakoreshejwe, yayobeje abantu baharurwa muri za miliyoni 87. ",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Uretse gutanga ayo mande, Facebook itegrezwa gushiraho akanama kigenga katazogenzurwa n'umuyobozi mukuru wa Facebook- Mark Zuckerberg.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "candy_xml",
+          "text": "<bold>None Fcebook yako</bold><bold>re</bold><bold>sheje </bold><bold>gute amabanga y'abanywanyi</bold><bold>?</bold>",
+          "type": "paragraph"
+        },
+        {
+          "href": "/idt2/7dade4b3-4ff8-4882-b1de-c7212604da11",
+          "idt2": {
+            "altText": "Facebook. Facebook irungika ubutumwa ku banywanyi, ibamenyesha nimba inyishu bayihaye zarakoreshejwe muvyo bitagenewe. [ 5$ Miliayari y&#39;amande  ] , Source: Isoko: BBC, Image: Hafi abantu 305 000 nibo bemeye gukoresha utwo twuma, ariko habuwe abashika miliyoni 87.",
+            "copyrightHolder": "BBC",
+            "dimensions": {
+              "large": {
+                "height": 498,
+                "href": "http://smallprox.vj.tools.bbc.co.uk/idt2/7dade4b3-4ff8-4882-b1de-c7212604da11/image/816",
+                "width": 1632
+              },
+              "medium": {
+                "height": 522,
+                "href": "http://smallprox.vj.tools.bbc.co.uk/idt2/7dade4b3-4ff8-4882-b1de-c7212604da11/image/470",
+                "width": 940
+              },
+              "small": {
+                "height": 810,
+                "href": "http://smallprox.vj.tools.bbc.co.uk/idt2/7dade4b3-4ff8-4882-b1de-c7212604da11/image/350",
+                "width": 700
+              }
+            },
+            "published": 1563987446925
+          },
+          "platform": "highweb",
+          "required": false,
+          "title": "g",
+          "type": "include"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Facebook iciwe amande inyuma y'iperereza ryagaragaje ko yakoresheje nabi amakuru y'abakoresha urwo rubuga. ",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Umugwi ushinzwe ubudandaji ku rwego rw'igihugu muri Leta zunze Ubumwe za Amerika - FTC, watanguye amatohoza kuri Facebook mu kwezi kwa gatatu umwaka uheze.",
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "markupType": "candy_xml",
+              "text": "<link><caption>Facebook ishobora gucibwa ihadabu itari bwabeho y’imiliyaridi 5</caption><url href=\"https://www.bbc.com/gahuza/48980274\" platform=\"highweb\"/></link>",
+              "type": "listItem"
+            },
+            {
+              "markupType": "candy_xml",
+              "text": "<link><caption>Ifaranga ‘Libra’ rya Facebook rizafasha Africa?</caption><url href=\"https://www.bbc.com/gahuza/48910247\" platform=\"highweb\"/></link>",
+              "type": "listItem"
+            },
+            {
+              "markupType": "candy_xml",
+              "text": "<link><caption>Imibare y'ibanga ibarirwa muri za miliyoni y'abakoresha Facebook yamenywe n''ibihumbi' by'abakozi bayo</caption><url href=\"https://www.bbc.com/gahuza/amakuru-47664374\" platform=\"highweb\"/></link>",
+              "type": "listItem"
+            }
+          ],
+          "numbered": false,
+          "type": "list"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ico gihe wagaragaje ko amabanga y'abakoresha urubuga rwa Facebook yegeranijwe mu buryo budaciye mu mategeko biciye mu kubazwa ibibazo biberekeye, agahabwa ikigo Cambridge Analytica, cunganira mu bibazo vya politike.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Cambridge Analytica ivuga ko ataho ibona yakosheje, ariko Facebook yasavye imbabazi abanywanyi bayo, yemera ko yakoze amakosa atuma bayitera icizere.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ikigo Cambridge Analytica sico conyene  cakoresheje amakuru y'abanywanyi ba Facebook, hari n'ibindi bigo bishobora kuba vyarayashikiriye ariko ntibimenyekane.",
+          "type": "paragraph"
+        },
+        {
+          "altText": "Mark Zukerberg",
+          "caption": "Mark Zukerberg",
+          "copyrightHolder": "EPA",
+          "height": 549,
+          "href": "http://c.files.bbci.co.uk/8929/production/_108031153_mediaitem108031819.jpg",
+          "id": "108031153",
+          "path": "/cpsprodpb/8929/production/_108031153_mediaitem108031819.jpg",
+          "positionHint": "full-width",
+          "subType": "body",
+          "type": "image",
+          "width": 976
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Hari n'amakuru avuga ko ayo makuru yegeranijwe ku bantu barwiriyemwo Abanyamerika, batabizi, yoba yarakorehejwe mu gihe c'amatora yo mu 2016, no muri kamarampaka y'Ubwongereza yo kuva mw'ishirahamwe rya Bulaya - Brexit.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ico kigo kivuga ko uko amezi atatu ashize, kizohora kigenzura nimba ibikoresho bishinzwe guhisha amabanga bizoba bikora neza. ",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ayo mande niyo gitigiri ca mbere kinini c'amafaranga caciwe ikigo gishinzwe ikoranabuhanga.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ariko ntaco ayo mafranga azohungabanya cane ku nyungu Facebook isanzwe ironka. ",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Itohoza ryaranguwe gushika no kwikoreshwa ry'uburyo butuma za terefone zimenya isura y'umuntu bwitwa &quot;facial recognition&quot;.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Hari abibaza ko guha igihano nk'iki Facebook bishobora gufasha kwihaniza n'ibindi bigo vyose vyoba bifise agatima ko gukoresha ukutariko amakuru yegeranijwe ava mu banywanyi, kuko bishobora kuzana ingaruka zikomeye kuri ivyo bigo.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Harashize imyaka, imbuga za interineti n'ayandi ma porogarama (Applications -Apps) yabura amakuru y'abantu agakoreshwa mu buryo budahuye n'amategeko.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Mu gihe ibi rero bishobora kubandanya n'ubwo bazokomeza kubirwanya, bishobora ahubwo gutera vyiyongera.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Ariko hari n'abibaza ko FTC yari ikwiye gukora ibisumba ivyo.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Umwe muri bo ni Alex Stamos, yigeze kuba umukuru wa Facebook mu biraba umutekano, we yibaza ko ari Facebook izohungukira.",
+          "type": "paragraph"
+        },
+        {
+          "markupType": "plain_text",
+          "text": "Kuko ngo mu kubuza guhanahana amakuru y'abanywanyi hagati y'imbuga canke ibigo bikoreshwa, bishobora gutuma Facebook yigungirako abanyayi bayo bagera kuri miliyaridi zibiri na miriyoni amajana ane, aho kubareka bagashikira izindi Apps canke imbuga zihiganwa na Facebook.",
+          "type": "paragraph"
+        }
+      ]
+    },
+    "promo": {
+      "headlines": {
+        "headline": "Facebook yaciwe amande ya miriyaridi zitanu z'ama dorari",
+        "shortHeadline": "Facebook yaciwe miriyaridi 5 z'ama dorari"
+      },
+      "id": "urn:bbc:ares::asset:gahuza/49116789",
+      "indexImage": {
+        "altText": "Mark Zukerberg",
+        "caption": "Mark Zukerberg",
+        "copyrightHolder": "EPA",
+        "height": 371,
+        "href": "http://c.files.bbci.co.uk/166A5/production/_108031819_8fab1a45-465e-4257-a88d-59cbdc4d1838.jpg",
+        "id": "108031819",
+        "path": "/cpsprodpb/166A5/production/_108031819_8fab1a45-465e-4257-a88d-59cbdc4d1838.jpg",
+        "subType": "index",
+        "type": "image",
+        "width": 660
+      },
+      "language": "rw",
+      "locators": {
+        "assetId": "49116789",
+        "assetUri": "/gahuza/49116789",
+        "cpsUrn": "urn:bbc:content:assetUri:gahuza/49116789",
+        "curie": "http://www.bbc.co.uk/asset/e0b5809f-c770-ec46-bd4e-2d6247e872f9"
+      },
+      "passport": {
+        "campaigns": [
+          {
+            "campaignId": "5a988e3e39461b000e9dabfb",
+            "campaignName": "WS - Keep me on trend"
+          }
+        ],
+        "category": {
+          "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
+          "categoryName": "Feature"
+        },
+        "taggings": []
+      },
+      "summary": "Facebook yemeye gutanga amande y'amadolari agera kuri miliyari zitanu ku murwi wo muri Leta zunze Ubumwe za Amerika ujejwe ubudandaji - US Federal Trade Commission (FTC).",
+      "timestamp": 1564067960000,
+      "type": "cps"
+    },
+    "relatedContent": {
+      "groups": [
+        {
+          "promos": [
+            {
+              "cpsType": "STY",
+              "headlines": {
+                "headline": "Facebook ishobora gucibwa ihadabu itari bwabeho y’imiliyaridi 5",
+                "shortHeadline": "Facebook ishobora gucibwa ihadabu itari bwabeho"
+              },
+              "id": "urn:bbc:ares::asset:gahuza/48980274",
+              "indexImage": {
+                "altText": "Biroroshe gukoresha urubuga rwa Facebook kuri za terefone ngendanwa",
+                "caption": "Biroroshe gukoresha urubuga rwa Facebook kuri za terefone ngendanwa",
+                "copyrightHolder": "Getty Images",
+                "height": 549,
+                "href": "http://c.files.bbci.co.uk/519F/production/_107859802_gettyimages-1051763290-1.jpg",
+                "id": "107859802",
+                "path": "/cpsprodpb/519F/production/_107859802_gettyimages-1051763290-1.jpg",
+                "subType": "index",
+                "type": "image",
+                "width": 976
+              },
+              "language": "rw",
+              "locators": {
+                "assetUri": "/gahuza/48980274",
+                "cpsUrn": "urn:bbc:content:assetUri:/gahuza/48980274"
+              },
+              "summary": "Ikigo FTC catanguye amatohoza kuri Facebook mu kwezi kwa gatatu kwa 2018, inyuma y'uko kironse inkuru yavuga ko Cambridge Analytica yaronkejwe amakuru y'abantu ibihumbi n'ibihumbi basanzwe bayikoresha.",
+              "timestamp": 1563098163000,
+              "type": "cps"
+            },
+            {
+              "cpsType": "STY",
+              "headlines": {
+                "headline": "Imibare y'ibanga ibarirwa muri za miliyoni y'abakoresha Facebook yamenywe n''ibihumbi' by'abakozi bayo",
+                "shortHeadline": "Imibare y'ibanga yo kuri Facebook igera muri za miliyoni yagiye ku karubanda"
+              },
+              "id": "urn:bbc:ares::asset:gahuza/amakuru-47664374",
+              "indexImage": {
+                "altText": "Facebook",
+                "copyrightHolder": "Reuters",
+                "height": 549,
+                "href": "http://c.files.bbci.co.uk/769B/production/_106136303_facebook.jpg",
+                "id": "106136303",
+                "path": "/cpsprodpb/769B/production/_106136303_facebook.jpg",
+                "subType": "index",
+                "type": "image",
+                "width": 976
+              },
+              "language": "rw",
+              "locators": {
+                "assetUri": "/gahuza/amakuru-47664374",
+                "cpsUrn": "urn:bbc:content:assetUri:/gahuza/amakuru-47664374"
+              },
+              "summary": "Brian Krebs, umushakashatsi ku mutekano wo ku mbuga za interineti, ni we watangaje bwa mbere iyi nkuru yo kunanirwa kurinda iyo mibare y'ibanga, bigatuma igera kuri miliyoni 600 igaragara yanditse mu buryo bosomeka neza.",
+              "timestamp": 1553252960000,
+              "type": "cps"
+            },
+            {
+              "cpsType": "STY",
+              "headlines": {
+                "headline": "Ifaranga ‘Libra’ rya Facebook rizafasha Africa?",
+                "shortHeadline": "Ifaranga ‘Libra’ rya Facebook rizafasha Africa?"
+              },
+              "id": "urn:bbc:ares::asset:gahuza/48910247",
+              "indexImage": {
+                "altText": "Hari ababona ko iri ari ifaranga rizakoreshwa cyane mu gihe kiri imbere",
+                "caption": "Hari ababona ko iri ari ifaranga rizakoreshwa cyane mu gihe kiri imbere",
+                "copyrightHolder": "Reuters",
+                "height": 549,
+                "href": "http://c.files.bbci.co.uk/879F/production/_107791743_libra2.jpg",
+                "id": "107791743",
+                "path": "/cpsprodpb/879F/production/_107791743_libra2.jpg",
+                "subType": "index",
+                "type": "image",
+                "width": 976
+              },
+              "language": "rw",
+              "locators": {
+                "assetUri": "/gahuza/48910247",
+                "cpsUrn": "urn:bbc:content:assetUri:/gahuza/48910247"
+              },
+              "summary": "Guhanahana, kohererezanya no kwishyurana amafaranga kuri telephone no mu ntoki hari benshi babigiriramo ingorane zo kwibwa cyangwa kwamburwa.",
+              "timestamp": 1562589573000,
+              "type": "cps"
+            }
+          ],
+          "type": "see-alsos"
+        }
+      ],
+      "section": {
+        "name": "Urupapuro rw'itangiriro",
+        "subType": "index",
+        "type": "simple",
+        "uri": "/gahuza/front_page"
+      },
+      "site": {
+        "name": "BBC Gahuza",
+        "subType": "site",
+        "type": "simple",
+        "uri": "/gahuza"
+      }
+    }
+  }
