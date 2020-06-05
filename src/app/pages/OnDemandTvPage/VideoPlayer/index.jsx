@@ -28,13 +28,8 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const VideoPlayer = ({
-  assetId,
-  masterBrand,
-  imageUrl,
-  episodeIsAvailable,
-}) => {
-  const { lang, translations, service } = useContext(ServiceContext);
+const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type }) => {
+  const { translations, service } = useContext(ServiceContext);
   const { isAmp, platform } = useContext(RequestContext);
   const location = useLocation();
   const isValidPlatform = ['amp', 'canonical'].includes(platform);
@@ -63,13 +58,11 @@ const VideoPlayer = ({
   }
   const placeholderSrc = getPlaceholderImageUrl(imageUrl);
 
-  if (!isValidPlatform || !masterBrand || !assetId) return null;
-
-  const mediaId = `${service}/${masterBrand}/${assetId}/${lang}`;
+  if (!isValidPlatform || !mediaId) return null;
 
   const embedUrl = getEmbedUrl({
     mediaId,
-    type: 'media',
+    type,
     isAmp,
     queryString: location.search,
   });
@@ -106,17 +99,17 @@ const VideoPlayer = ({
 };
 
 VideoPlayer.propTypes = {
-  masterBrand: string,
-  assetId: string,
   imageUrl: string,
   episodeIsAvailable: bool,
+  mediaId: string,
+  type: string,
 };
 
 VideoPlayer.defaultProps = {
-  masterBrand: '',
-  assetId: '',
   imageUrl: '',
   episodeIsAvailable: true,
+  mediaId: '',
+  type: '',
 };
 
 export default VideoPlayer;

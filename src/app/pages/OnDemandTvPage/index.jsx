@@ -49,6 +49,9 @@ const OnDemandTvPage = ({ pageData }) => {
     episodeIsAvailable,
   } = pageData;
 
+  const { lang, service } = useContext(ServiceContext);
+  const mediaId = `${service}/${masterBrand}/${episodeId}/${lang}`;
+
   const { timezone, locale, dir } = useContext(ServiceContext);
 
   const formattedTimestamp = formatUnixTimestamp({
@@ -92,10 +95,10 @@ const OnDemandTvPage = ({ pageData }) => {
             enableGelGutters
           >
             <VideoPlayer
-              masterBrand={masterBrand}
-              assetId={episodeId}
               imageUrl={imageUrl}
               episodeIsAvailable={episodeIsAvailable}
+              mediaId={mediaId}
+              type="media"
             />
           </StyledGelWrapperGrid>
           <OnDemandHeadingBlock
