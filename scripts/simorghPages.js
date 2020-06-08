@@ -13,7 +13,7 @@ const getUrl = (pageType, env) => {
     pageType.environments[env] &&
     pageType.environments[env].paths
   ) {
-    [url] = pageType.environments[env].paths;
+    url = pageType.environments[env].paths;
   }
 
   return url;
@@ -34,37 +34,45 @@ const generateLinks = (service, env, domain) => {
 
   const frontPageURL = getUrl(frontPage, env);
   if (frontPageURL) {
-    output.push(`[home](${domain}${frontPageURL})`);
+    frontPageURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => output.push(`${url}`));
   }
 
   const articleURL = getUrl(articles, env);
   if (articleURL) {
-    output.push(`[articles](${domain}${articleURL})`);
+    articleURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => output.push(`${url}`));
   }
 
   const liveRadioURL = getUrl(liveRadio, env);
   if (liveRadioURL) {
-    output.push(`[liveRadio](${domain}${liveRadioURL})`);
+    liveRadioURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => output.push(`${url}`));
   }
 
   const mapURL = getUrl(mediaAssetPage, env);
   if (mapURL) {
-    output.push(`[MAP](${domain}${mapURL})`);
+    mapURL.map(url => `${domain}${url}`).forEach(url => output.push(`${url}`));
   }
 
   const pglURL = getUrl(photoGalleryPage, env);
   if (pglURL) {
-    output.push(`[PGL](${domain}${pglURL})`);
+    pglURL.map(url => `${domain}${url}`).forEach(url => output.push(`${url}`));
   }
 
   const styURL = getUrl(storyPage, env);
   if (styURL) {
-    output.push(`[STY](${domain}${styURL})`);
+    styURL.map(url => `${domain}${url}`).forEach(url => output.push(`${url}`));
   }
 
   const mostReadURL = getUrl(mostReadPage, env);
   if (mostReadURL) {
-    output.push(`[mostRead](${domain}${mostReadURL})`);
+    mostReadURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => output.push(`${url}`));
   }
 
   return output.join('<br/>');
