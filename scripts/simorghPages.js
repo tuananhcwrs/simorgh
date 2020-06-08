@@ -36,43 +36,70 @@ const generateLinks = (service, env, domain) => {
   if (frontPageURL) {
     frontPageURL
       .map(url => `${domain}${url}`)
-      .forEach(url => output.push(`${url}`));
+      .forEach(url => {
+        console.log('frontPage', env, url);
+        output.push(`${url}`);
+      });
   }
 
   const articleURL = getUrl(articles, env);
   if (articleURL) {
     articleURL
       .map(url => `${domain}${url}`)
-      .forEach(url => output.push(`${url}`));
+      .forEach(url => {
+        console.log("articles", env, url);
+        output.push(`${url}`);
+      });
   }
 
   const liveRadioURL = getUrl(liveRadio, env);
   if (liveRadioURL) {
     liveRadioURL
       .map(url => `${domain}${url}`)
-      .forEach(url => output.push(`${url}`));
+      .forEach(url => {
+        // console.log(liveradio, env, url);
+        output.push(`${url}`);
+      });
   }
 
   const mapURL = getUrl(mediaAssetPage, env);
   if (mapURL) {
-    mapURL.map(url => `${domain}${url}`).forEach(url => output.push(`${url}`));
+    mapURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => {
+        console.log("mediaAssetPage", env, url);
+        output.push(`${url}`);
+      });
   }
 
   const pglURL = getUrl(photoGalleryPage, env);
   if (pglURL) {
-    pglURL.map(url => `${domain}${url}`).forEach(url => output.push(`${url}`));
+    pglURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => {
+        console.log('photoGalleryPage', env, url);
+        output.push(`${url}`);
+      });
   }
 
   const styURL = getUrl(storyPage, env);
   if (styURL) {
-    styURL.map(url => `${domain}${url}`).forEach(url => output.push(`${url}`));
+    styURL
+      .map(url => `${domain}${url}`)
+      .forEach(url => {
+        console.log('storyPage', domain, url);
+        output.push(`${url}`);
+      });
   }
 
   const mostReadURL = getUrl(mostReadPage, env);
   if (mostReadURL) {
     mostReadURL
       .map(url => `${domain}${url}`)
-      .forEach(url => output.push(`${url}`));
+      .forEach(url => {
+        console.log('mostReadPage', env, url);
+        output.push(`${url}`);
+      });
   }
 
   return output.join('<br/>');
