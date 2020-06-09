@@ -3,15 +3,19 @@ import styled from 'styled-components';
 import { shape, string, number, bool } from 'prop-types';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import { useLocation } from 'react-router-dom';
 import MetadataContainer from '../../containers/Metadata';
 import ATIAnalytics from '../../containers/ATIAnalytics';
 import ChartbeatAnalytics from '../../containers/ChartbeatAnalytics';
 import Grid, { GelPageGrid } from '#app/components/Grid';
 import { ServiceContext } from '../../contexts/ServiceContext';
+import { RequestContext } from '#contexts/RequestContext';
 import OnDemandHeadingBlock from '#containers/RadioPageBlocks/Blocks/OnDemandHeading';
 import ParagraphBlock from '#containers/RadioPageBlocks/Blocks/Paragraph';
 import VideoPlayer from '../OnDemandTvPage/VideoPlayer';
 import EpisodeImage from '#containers/RadioPageBlocks/Blocks/OnDemandImage';
+import LinkedData from '#containers/LinkedData';
+import getEmbedUrl from '#lib/utilities/getEmbedUrl';
 
 const SKIP_LINK_ANCHOR_ID = 'content';
 
@@ -35,19 +39,6 @@ const StyledGelWrapperGrid = styled(GelPageGrid)`
   }
 `;
 
-/* eslint-disable react/prop-types */
-const renderEpisode = ({ mediaId, type, episodeIsAvailable, skin }) => {
-  return (
-    <VideoPlayer
-      mediaId={mediaId}
-      type={type}
-      episodeIsAvailable={episodeIsAvailable}
-      skin={skin}
-    />
-  );
-};
-/* eslint-enable react/prop-types */
-
 const OnDemandRadioPage = ({ pageData }) => {
   const idAttr = SKIP_LINK_ANCHOR_ID;
   const {
@@ -61,15 +52,37 @@ const OnDemandRadioPage = ({ pageData }) => {
     episodeIsAvailable,
     releaseDateTimeStamp,
     imageUrl,
+    promoBrandTitle,
+    thumbnailImageUrl,
+    durationISO8601,
   } = pageData;
 
   const { dir, lang, service } = useContext(ServiceContext);
+  const { isAmp } = useContext(RequestContext);
+  const location = useLocation();
   const oppDir = dir === 'rtl' ? 'ltr' : 'rtl';
 
   const mediaId = `${service}/${masterBrand}/${episodeId}/${lang}`;
 
   const type = 'media';
   const skin = 'audio';
+
+  const embedUrl = getEmbedUrl({
+    mediaId,
+    type,
+    isAmp,
+    queryString: location.search,
+  });
+
+  const audioLinkedData = {
+    '@type': 'AudioObject',
+    name: promoBrandTitle,
+    description: shortSynopsis,
+    thumbnailUrl: thumbnailImageUrl,
+    duration: durationISO8601,
+    uploadDate: new Date(releaseDateTimeStamp).toISOString(),
+    embedURL: embedUrl,
+  };
 
   return (
     <>
@@ -81,7 +94,6 @@ const OnDemandRadioPage = ({ pageData }) => {
         description={shortSynopsis}
         openGraphType="website"
       />
-
       <StyledGelPageGrid
         forwardedAs="main"
         role="main"
@@ -113,13 +125,20 @@ const OnDemandRadioPage = ({ pageData }) => {
               <EpisodeImage imageUrl={imageUrl} dir={dir} />
             </Grid>
           </StyledGelWrapperGrid>
-          {renderEpisode({
-            masterBrand,
-            mediaId,
-            type,
-            episodeIsAvailable,
-            skin,
-          })}
+          <VideoPlayer
+            masterBrand={masterBrand}
+            mediaId={mediaId}
+            type={type}
+            episodeIsAvailable={episodeIsAvailable}
+            skin={skin}
+          />
+          {episodeIsAvailable && (
+            <LinkedData
+              type="WebPage"
+              seoTitle={headline}
+              entities={[audioLinkedData]}
+            />
+          )}
         </Grid>
       </StyledGelPageGrid>
     </>

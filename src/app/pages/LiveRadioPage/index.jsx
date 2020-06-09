@@ -10,6 +10,8 @@ import Grid, { GelPageGrid } from '#app/components/Grid';
 import LinkedData from '../../containers/LinkedData';
 import VideoPlayer from '../OnDemandTvPage/VideoPlayer';
 import { ServiceContext } from '../../contexts/ServiceContext';
+import getMediaId from '#lib/utilities/getMediaId';
+import getMasterbrand from '#lib/utilities/getMasterbrand';
 
 const StyledGelPageGrid = styled(GelPageGrid)`
   width: 100%;
@@ -25,12 +27,20 @@ const LiveRadioPage = ({ pageData }) => {
     bodySummary,
     masterBrand,
   } = pageData;
-  const { script, lang, service, dir } = useContext(ServiceContext);
+  const { script, lang, liveRadioOverrides, service, dir } = useContext(
+    ServiceContext,
+  );
 
   const type = 'media';
   const episodeIsAvailable = true;
   const skin = 'audio';
-  const mediaId = `${masterBrand}/liveradio/${lang}`;
+  const assetId = 'liveradio';
+  const mediaId = getMediaId({
+    assetId,
+    masterBrand: getMasterbrand(masterBrand, liveRadioOverrides),
+    lang,
+    service,
+  });
 
   return (
     <>
