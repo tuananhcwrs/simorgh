@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { shape, string, number } from 'prop-types';
+import { shape, string, number, bool } from 'prop-types';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import MetadataContainer from '../../containers/Metadata';
@@ -58,7 +58,7 @@ const OnDemandRadioPage = ({ pageData }) => {
     shortSynopsis,
     masterBrand,
     episodeId,
-
+    episodeIsAvailable,
     releaseDateTimeStamp,
     imageUrl,
   } = pageData;
@@ -69,7 +69,6 @@ const OnDemandRadioPage = ({ pageData }) => {
   const mediaId = `${service}/${masterBrand}/${episodeId}/${lang}`;
 
   const type = 'media';
-  const episodeIsAvailable = true;
   const skin = 'audio';
 
   return (
@@ -133,8 +132,7 @@ OnDemandRadioPage.propTypes = {
     headline: string,
     summary: string,
     language: string,
-    episodeAvailableFrom: number,
-    episodeAvailableUntil: number,
+    episodeIsAvailable: bool,
     releaseDateTimeStamp: number,
     imageUrl: string,
   }).isRequired,
