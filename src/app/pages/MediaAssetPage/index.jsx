@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import path from 'ramda/src/path';
+import isNil from 'ramda/src/isNil';
 import styled from 'styled-components';
 import {
   GEL_SPACING_DBL,
@@ -62,15 +63,49 @@ const MediaAssetPage = ({ pageData }) => {
   const aboutTags = getAboutTags(pageData);
 
   const assetId = assetUri.substr(1);
+  // temporary measure, will not be final implementation
+  const available = isNil(
+    path(
+      [
+        'content',
+        'model',
+        'blocks',
+        1,
+        'model',
+        'blocks',
+        0,
+        'model',
+        'blocks',
+        0,
+        'model',
+        'available',
+      ],
+      pageData,
+    ),
+  )
+    ? true
+    : path(
+        [
+          'content',
+          'model',
+          'blocks',
+          1,
+          'model',
+          'blocks',
+          0,
+          'model',
+          'blocks',
+          0,
+          'model',
+          'available',
+        ],
+        pageData,
+      );
 
   const versionId = path(
     ['promo', 'media', 'versions', 0, 'versionId'],
     pageData,
   );
-  // const blockId = path(
-  //   ['model', 'blocks', 0, 'model', 'blockId'],
-  //   aresMediaBlock,
-  // );
 
   const mediaId = `${assetId}/${versionId}/${lang}`;
 
@@ -90,15 +125,32 @@ const MediaAssetPage = ({ pageData }) => {
     // This is not something we currently support, so we return an error message
     video: isLegacyMediaAssetPage(requestContext.canonicalLink)
       ? MediaMessage
-      : () => <VideoPlayer mediaId={mediaId} assetId={assetId} type="cps" />,
+      : () => (
+        <VideoPlayer
+          mediaId={mediaId}
+          assetId={assetId}
+          type="cps"
+          episodeIsAvailable={available}
+        />
+        ),
 
     legacyMedia: () => (
-      <VideoPlayer mediaId={mediaId} assetId={assetId} type="cps" />
+      <VideoPlayer
+        mediaId={mediaId}
+        assetId={assetId}
+        type="cps"
+        episodeIsAvailable={available}
+      />
     ),
 
     // "Versions" are live streams
     version: () => (
-      <VideoPlayer mediaId={mediaId} assetId={assetId} type="cps" />
+      <VideoPlayer
+        mediaId={mediaId}
+        assetId={assetId}
+        type="cps"
+        episodeIsAvailable={available}
+      />
     ),
     unavailableMedia: MediaMessage,
   };

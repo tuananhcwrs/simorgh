@@ -28,14 +28,22 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type }) => {
+const landscapeRatio = '56.25%'; // (9/16)*100 = 16:9
+const StyledMessageContainer = styled.div`
+  margin-top: ${GEL_SPACING_TRPL};
+  padding-top: ${landscapeRatio};
+  position: relative;
+  overflow: hidden;
+`;
+
+const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type, skin }) => {
   const { translations, service } = useContext(ServiceContext);
   const { isAmp, platform } = useContext(RequestContext);
   const location = useLocation();
   const isValidPlatform = ['amp', 'canonical'].includes(platform);
   const mediaInfo = {
     title: 'On-demand TV',
-    type: 'video',
+    type,
   };
   const noJsMessage = pathOr(
     `This ${mediaInfo.type} cannot play in your browser. Please enable JavaScript or try a different browser.`,
@@ -51,9 +59,9 @@ const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type }) => {
     );
 
     return (
-      <StyledWrapper>
+      <StyledMessageContainer>
         <MediaMessage service={service} message={expiredContentMessage} />
-      </StyledWrapper>
+      </StyledMessageContainer>
     );
   }
   const placeholderSrc = getPlaceholderImageUrl(imageUrl);
@@ -80,6 +88,7 @@ const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type }) => {
           placeholderSrc={placeholderSrc}
           src={embedUrl}
           title={iframeTitle}
+          skin={skin}
           noJsMessage={noJsMessage}
           service={service}
         />
@@ -89,6 +98,7 @@ const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type }) => {
           src={embedUrl}
           title={iframeTitle}
           service={service}
+          skin={skin}
           mediaInfo={mediaInfo}
           noJsMessage={noJsMessage}
           noJsClassName="no-js"
@@ -103,6 +113,7 @@ VideoPlayer.propTypes = {
   episodeIsAvailable: bool,
   mediaId: string,
   type: string,
+  skin: string,
 };
 
 VideoPlayer.defaultProps = {
@@ -110,6 +121,7 @@ VideoPlayer.defaultProps = {
   episodeIsAvailable: true,
   mediaId: '',
   type: '',
+  skin: 'video',
 };
 
 export default VideoPlayer;

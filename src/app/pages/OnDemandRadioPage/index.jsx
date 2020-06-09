@@ -10,13 +10,10 @@ import Grid, { GelPageGrid } from '#app/components/Grid';
 import { ServiceContext } from '../../contexts/ServiceContext';
 import OnDemandHeadingBlock from '#containers/RadioPageBlocks/Blocks/OnDemandHeading';
 import ParagraphBlock from '#containers/RadioPageBlocks/Blocks/Paragraph';
-import AudioPlayerBlock from '#containers/RadioPageBlocks/Blocks/AudioPlayer';
+import VideoPlayer from '../OnDemandTvPage/VideoPlayer';
 import EpisodeImage from '#containers/RadioPageBlocks/Blocks/OnDemandImage';
 
 const SKIP_LINK_ANCHOR_ID = 'content';
-const EPISODE_IS_AVAILABLE = 'available';
-const EPISODE_IS_EXPIRED = 'expired';
-const EPISODE_IS_NOT_YET_AVAILABLE = 'not-yet-available';
 
 const getGroups = (zero, one, two, three, four, five) => ({
   group0: zero,
@@ -26,15 +23,6 @@ const getGroups = (zero, one, two, three, four, five) => ({
   group4: four,
   group5: five,
 });
-
-const getEpisodeAvailability = (availableFrom, availableUntil) => {
-  const timeNow = Date.now();
-
-  if (!availableUntil) return EPISODE_IS_EXPIRED;
-  if (timeNow < availableFrom) return EPISODE_IS_NOT_YET_AVAILABLE;
-
-  return EPISODE_IS_AVAILABLE;
-};
 
 const StyledGelPageGrid = styled(GelPageGrid)`
   width: 100%;
@@ -48,40 +36,15 @@ const StyledGelWrapperGrid = styled(GelPageGrid)`
 `;
 
 /* eslint-disable react/prop-types */
-const renderEpisode = ({
-  masterBrand,
-  episodeId,
-  episodeAvailableFrom,
-  episodeAvailableUntil,
-  promoBrandTitle,
-  shortSynopsis,
-  thumbnailImageUrl,
-  durationISO8601,
-  releaseDateTimeStamp,
-}) => {
-  const episodeAvailability = getEpisodeAvailability(
-    episodeAvailableFrom,
-    episodeAvailableUntil,
+const renderEpisode = ({ mediaId, type, episodeIsAvailable, skin }) => {
+  return (
+    <VideoPlayer
+      mediaId={mediaId}
+      type={type}
+      episodeIsAvailable={episodeIsAvailable}
+      skin={skin}
+    />
   );
-  switch (episodeAvailability) {
-    case EPISODE_IS_AVAILABLE:
-      return (
-        <AudioPlayerBlock
-          externalId={masterBrand}
-          id={episodeId}
-          promoBrandTitle={promoBrandTitle}
-          shortSynopsis={shortSynopsis}
-          thumbnailImageUrl={thumbnailImageUrl}
-          durationISO8601={durationISO8601}
-          releaseDateTimeStamp={releaseDateTimeStamp}
-        />
-      );
-    case EPISODE_IS_EXPIRED:
-      return <AudioPlayerBlock isExpired />;
-    case EPISODE_IS_NOT_YET_AVAILABLE:
-    default:
-      return null;
-  }
 };
 /* eslint-enable react/prop-types */
 
@@ -95,17 +58,19 @@ const OnDemandRadioPage = ({ pageData }) => {
     shortSynopsis,
     masterBrand,
     episodeId,
-    episodeAvailableFrom,
-    episodeAvailableUntil,
+
     releaseDateTimeStamp,
     imageUrl,
-    promoBrandTitle,
-    durationISO8601,
-    thumbnailImageUrl,
   } = pageData;
 
-  const { dir } = useContext(ServiceContext);
+  const { dir, lang, service } = useContext(ServiceContext);
   const oppDir = dir === 'rtl' ? 'ltr' : 'rtl';
+
+  const mediaId = `${service}/${masterBrand}/${episodeId}/${lang}`;
+
+  const type = 'media';
+  const episodeIsAvailable = true;
+  const skin = 'audio';
 
   return (
     <>
@@ -151,14 +116,10 @@ const OnDemandRadioPage = ({ pageData }) => {
           </StyledGelWrapperGrid>
           {renderEpisode({
             masterBrand,
-            episodeId,
-            episodeAvailableFrom,
-            episodeAvailableUntil,
-            promoBrandTitle,
-            shortSynopsis,
-            thumbnailImageUrl,
-            durationISO8601,
-            releaseDateTimeStamp,
+            mediaId,
+            type,
+            episodeIsAvailable,
+            skin,
           })}
         </Grid>
       </StyledGelPageGrid>

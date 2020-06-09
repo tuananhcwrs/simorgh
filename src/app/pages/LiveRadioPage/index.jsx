@@ -8,7 +8,7 @@ import MetadataContainer from '../../containers/Metadata';
 import ChartbeatAnalytics from '../../containers/ChartbeatAnalytics';
 import Grid, { GelPageGrid } from '#app/components/Grid';
 import LinkedData from '../../containers/LinkedData';
-import AudioPlayer from '#containers/RadioPageBlocks/Blocks/AudioPlayer';
+import VideoPlayer from '../OnDemandTvPage/VideoPlayer';
 import { ServiceContext } from '../../contexts/ServiceContext';
 
 const StyledGelPageGrid = styled(GelPageGrid)`
@@ -25,7 +25,12 @@ const LiveRadioPage = ({ pageData }) => {
     bodySummary,
     masterBrand,
   } = pageData;
-  const { script, service, dir } = useContext(ServiceContext);
+  const { script, lang, service, dir } = useContext(ServiceContext);
+
+  const type = 'media';
+  const episodeIsAvailable = true;
+  const skin = 'audio';
+  const mediaId = `${masterBrand}/liveradio/${lang}`;
 
   return (
     <>
@@ -85,7 +90,12 @@ const LiveRadioPage = ({ pageData }) => {
           <Paragraph script={script} service={service}>
             {bodySummary}
           </Paragraph>
-          <AudioPlayer externalId={masterBrand} id="liveradio" />
+          <VideoPlayer
+            mediaId={mediaId}
+            type={type}
+            episodeIsAvailable={episodeIsAvailable}
+            skin={skin}
+          />
         </Grid>
       </StyledGelPageGrid>
     </>
