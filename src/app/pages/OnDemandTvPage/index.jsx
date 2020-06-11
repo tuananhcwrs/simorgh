@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { shape, string, number, bool } from 'prop-types';
 import {
@@ -13,8 +14,10 @@ import Grid, { GelPageGrid } from '#app/components/Grid';
 import LinkedData from '#containers/LinkedData';
 import MetadataContainer from '../../containers/Metadata';
 import { ServiceContext } from '../../contexts/ServiceContext';
+import { RequestContext } from '#contexts/RequestContext';
 import OnDemandHeadingBlock from '#containers/RadioPageBlocks/Blocks/OnDemandHeading';
 import ParagraphBlock from '#containers/RadioPageBlocks/Blocks/Paragraph';
+import getEmbedUrl from '#lib/utilities/getEmbedUrl';
 import VideoPlayer from './VideoPlayer';
 
 const StyledGelWrapperGrid = styled.div`
@@ -47,12 +50,15 @@ const OnDemandTvPage = ({ pageData }) => {
     episodeId,
     imageUrl,
     episodeIsAvailable,
+    promoBrandTitle,
+    thumbnailImageUrl,
+    durationISO8601,
   } = pageData;
 
-  const { lang, service } = useContext(ServiceContext);
+  const { lang, timezone, locale, dir, service } = useContext(ServiceContext);
   const mediaId = `${service}/${masterBrand}/${episodeId}/${lang}`;
-
-  const { timezone, locale, dir } = useContext(ServiceContext);
+  const { isAmp } = useContext(RequestContext);
+  const location = useLocation();
 
   const formattedTimestamp = formatUnixTimestamp({
     timestamp: releaseDateTimeStamp,
@@ -60,6 +66,13 @@ const OnDemandTvPage = ({ pageData }) => {
     timezone,
     locale,
     isRelative: false,
+  });
+
+  const embedUrl = getEmbedUrl({
+    mediaId,
+    type: 'media',
+    isAmp,
+    queryString: location.search,
   });
 
   return (
@@ -72,7 +85,25 @@ const OnDemandTvPage = ({ pageData }) => {
         description={shortSynopsis}
         openGraphType="website"
       />
-      <LinkedData type="WebPage" seoTitle={headline} />
+      <LinkedData
+        type="WebPage"
+        seoTitle={headline}
+        entities={
+          episodeIsAvailable
+            ? [
+                {
+                  '@type': 'VideoObject',
+                  name: promoBrandTitle,
+                  description: shortSynopsis,
+                  thumbnailUrl: thumbnailImageUrl,
+                  duration: durationISO8601,
+                  uploadDate: new Date(releaseDateTimeStamp).toISOString(),
+                  embedURL: embedUrl,
+                },
+              ]
+            : []
+        }
+      />
       <StyledGelPageGrid
         forwardedAs="main"
         role="main"
@@ -124,6 +155,9 @@ OnDemandTvPage.propTypes = {
     episodeId: string,
     imageUrl: string,
     episodeIsAvailable: bool,
+    promoBrandTitle: string,
+    thumbnailImageUrl: string,
+    durationISO8601: string,
   }).isRequired,
 };
 

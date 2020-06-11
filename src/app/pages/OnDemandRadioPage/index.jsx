@@ -74,16 +74,6 @@ const OnDemandRadioPage = ({ pageData }) => {
     queryString: location.search,
   });
 
-  const audioLinkedData = {
-    '@type': 'AudioObject',
-    name: promoBrandTitle,
-    description: shortSynopsis,
-    thumbnailUrl: thumbnailImageUrl,
-    duration: durationISO8601,
-    uploadDate: new Date(releaseDateTimeStamp).toISOString(),
-    embedURL: embedUrl,
-  };
-
   return (
     <>
       <ATIAnalytics data={pageData} />
@@ -132,13 +122,25 @@ const OnDemandRadioPage = ({ pageData }) => {
             episodeIsAvailable={episodeIsAvailable}
             skin={skin}
           />
-          {episodeIsAvailable && (
-            <LinkedData
-              type="WebPage"
-              seoTitle={headline}
-              entities={[audioLinkedData]}
-            />
-          )}
+          <LinkedData
+            type="WebPage"
+            seoTitle={headline}
+            entities={
+              episodeIsAvailable
+                ? [
+                    {
+                      '@type': 'AudioObject',
+                      name: promoBrandTitle,
+                      description: shortSynopsis,
+                      thumbnailUrl: thumbnailImageUrl,
+                      duration: durationISO8601,
+                      uploadDate: new Date(releaseDateTimeStamp).toISOString(),
+                      embedURL: embedUrl,
+                    },
+                  ]
+                : []
+            }
+          />
         </Grid>
       </StyledGelPageGrid>
     </>

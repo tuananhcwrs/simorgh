@@ -34,6 +34,10 @@ const StyledMessageContainer = styled.div`
   padding-top: ${landscapeRatio};
   position: relative;
   overflow: hidden;
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    width: calc(100% + ${GEL_SPACING_QUAD});
+    margin: 0 -${GEL_SPACING_DBL};
+  }
 `;
 
 const VideoPlayer = ({ imageUrl, episodeIsAvailable, mediaId, type, skin }) => {
