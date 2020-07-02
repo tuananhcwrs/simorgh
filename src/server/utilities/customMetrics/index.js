@@ -16,6 +16,6 @@ const sendMetric = metricScope(
   },
 );
 
-const sendCustomMetric = params => onEnvironment('test', params)(sendMetric);
+const sendCustomMetric = params => onEnvironment('live', params)(sendMetric);
 
 export default sendCustomMetric;
