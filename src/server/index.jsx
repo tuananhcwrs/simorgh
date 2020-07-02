@@ -317,6 +317,15 @@ server
           derivedPageType = ramdaPath([('pageData', 'metadata', 'type')], data);
         }
 
+        if (status !== 200) {
+          await sendCustomMetric({
+            metricName: NON_200_RESPONSE,
+            statusCode: status,
+            pageType: derivedPageType,
+            requestUrl: url,
+          });
+        }
+
         data.path = urlPath;
         data.timeOnServer = Date.now();
 
