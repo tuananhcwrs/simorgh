@@ -1,28 +1,27 @@
 import services from '../../../src/server/utilities/serviceConfigs';
 
-Object.keys(services).forEach(service => {
-  const notWSServices = [
-    'news',
-    'cymrufyw',
-    'naidheachdan',
-    'default',
-    'scotland',
-    'archive', // not WS
-    'serbian', // variant with redirect - test needs to be updated
-    'ukchina', // variant with redirect - test needs to be updated
-    'zhongwen', // variant with redirect - test needs to be updated
-  ]; // Not WS
+describe('WS Redirects', () => {
+  Object.keys(services).forEach(service => {
+    const notWSServices = [
+      'news',
+      'cymrufyw',
+      'naidheachdan',
+      'default',
+      'scotland',
+      'archive', // not WS
+    ]; // Not WS
 
-  if (notWSServices.includes(service)) {
-    return;
-  }
+    const wsServicesWithVariants = ['serbian', 'ukchina', 'zhongwen'];
 
-  // Do not run the redirect tests on the local environment
-  if (Cypress.env('APP_ENV') !== 'live') {
-    return;
-  }
+    if ([...notWSServices, ...wsServicesWithVariants].includes(service)) {
+      return;
+    }
 
-  describe('WS Redirects', () => {
+    // Only run the redirect tests on the live environment
+    if (Cypress.env('APP_ENV') !== 'live') {
+      return;
+    }
+
     it(`should redirect to *bbc.com/${service}`, () => {
       const urlsTotest = [
         `https://www.bbc.co.uk/${service}`,
