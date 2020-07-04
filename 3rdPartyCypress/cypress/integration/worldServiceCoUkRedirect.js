@@ -50,8 +50,8 @@ describe('WS Redirects', () => {
 
           expect(resp.status).to.eq(expectedStatus);
 
-          // it should redirect to the correct domain, if not variant
-          if (!isVariantRedirect) {
+          // it should redirect to the .com domain, if not variant front page (since we are not following the redirect)
+          if (!isVariantFrontPage(urlToTest)) {
             expect(redirected.origin).to.eq(`https://www.${baseDomain}bbc.com`);
           }
 
