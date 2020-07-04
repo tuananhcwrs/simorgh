@@ -27,7 +27,8 @@ describe('WS Redirects', () => {
 
     const baseDomain = Cypress.env('APP_ENV') === 'test' ? 'test.' : '';
 
-    const isFrontPage = url => !url.includes('articles');
+    const isVariantFrontPage = url =>
+      isVariantRedirect && !url.includes('articles');
 
     it(`www.${baseDomain}bbc.co.uk/${service} should redirect to www.${baseDomain}bbc.com/${service}`, () => {
       const urlsTotest = [
@@ -45,8 +46,7 @@ describe('WS Redirects', () => {
 
           // it should return correct status code
           // Variant services return a 302 status (redirect found), otherwise 301 (moved permanently)
-          const expectedStatus =
-            isVariantRedirect && isFrontPage(urlToTest) ? 302 : 301;
+          const expectedStatus = isVariantFrontPage(urlToTest) ? 302 : 301;
 
           expect(resp.status).to.eq(expectedStatus);
 
