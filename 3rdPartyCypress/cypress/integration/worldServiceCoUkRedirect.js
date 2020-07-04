@@ -12,9 +12,11 @@ describe('WS Redirects', () => {
       'archive',
     ]; // Not WS
 
-    const servicesWtithVariantRedirect = ['serbian', 'ukchina', 'zhongwen'];
+    const isVariantRedirect = ['serbian', 'ukchina', 'zhongwen'].includes(
+      service,
+    );
 
-    if ([...notWSServices, ...servicesWtithVariantRedirect].includes(service)) {
+    if (notWSServices.includes(service)) {
       return;
     }
 
@@ -24,6 +26,8 @@ describe('WS Redirects', () => {
     }
 
     const baseDomain = Cypress.env('APP_ENV') === 'test' ? 'test.' : '';
+
+    const isFrontPage = url => !url.includes('articles');
 
     it(`www.${baseDomain}bbc.co.uk/${service} should redirect to www.${baseDomain}bbc.com/${service}`, () => {
       const urlsTotest = [
@@ -37,13 +41,24 @@ describe('WS Redirects', () => {
           url: urlToTest,
           followRedirect: false,
         }).then(resp => {
-          expect(resp.status).to.eq(301);
           const redirected = new Url(resp.redirectedToUrl);
-          expect(redirected.origin).to.eq(`https://www.${baseDomain}bbc.com`);
 
+          // it should return correct status code
+          // Variant services return a 302 status (redirect found), otherwise 301 (moved permanently)
+          const expectedStatus =
+            isVariantRedirect && isFrontPage(urlToTest) ? 302 : 301;
+
+          expect(resp.status).to.eq(expectedStatus);
+
+          // it should redirect to the correct domain, if not variant
+          if (!isVariantRedirect) {
+            expect(redirected.origin).to.eq(`https://www.${baseDomain}bbc.com`);
+          }
+
+          // it should match the redirected path
           const original = new Url(urlToTest);
-          // expect redirected path to the same as the url under test
-          expect(original.pathname).to.eq(redirected.pathname);
+
+          expect(redirected.pathname).to.contain(original.pathname);
         });
       });
     });
