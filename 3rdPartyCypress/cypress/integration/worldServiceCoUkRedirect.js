@@ -8,21 +8,21 @@ describe('WS Redirects', () => {
       'naidheachdan',
       'default',
       'scotland',
-      'archive', // not WS
+      'archive',
     ]; // Not WS
 
-    const wsServicesWithVariants = ['serbian', 'ukchina', 'zhongwen'];
+    const servicesWtithVariantRedirect = ['serbian', 'ukchina', 'zhongwen'];
 
-    if ([...notWSServices, ...wsServicesWithVariants].includes(service)) {
+    if ([...notWSServices, ...servicesWtithVariantRedirect].includes(service)) {
       return;
     }
 
-    // Only run the redirect tests on the live environment
-    if (Cypress.env('APP_ENV') !== 'live') {
+    // Do not run the redirect tests on the local environment
+    if (Cypress.env('APP_ENV') === 'local') {
       return;
     }
 
-    it(`should redirect to *bbc.com/${service}`, () => {
+    it(`should redirect *bbc.com/${service}`, () => {
       const urlsTotest = [
         `https://www.bbc.co.uk/${service}`,
         `https://www.bbc.co.uk/${service}/articles/a0000000000o`,
