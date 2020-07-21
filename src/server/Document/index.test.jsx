@@ -19,6 +19,7 @@ jest.mock('@loadable/server', () => ({
   ChunkExtractor: jest.fn().mockImplementation(() => ({
     collectChunks: arg => arg,
     getScriptElements: () => '__mock_script_elements__',
+    getLinkElements: () => '__mock_link_elements__',
   })),
 }));
 
@@ -97,6 +98,7 @@ describe('Render Document', () => {
         helmet: undefined,
         isAmp: false,
         scripts: '__mock_script_elements__',
+        linkTags: '__mock_link_elements__',
         service: 'news',
         styleTags: '__mock_style_tags__',
       });
