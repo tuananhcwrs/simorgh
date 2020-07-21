@@ -314,231 +314,178 @@
             "type": "cps"
           },
           {
-            "headlines": {
-              "headline": "Des échanges de tirs à Bangui, capitale centrafricaine"
-            },
-            "locators": {
-              "assetUri": "/afrique/48959657",
-              "cpsUrn": "urn:bbc:content:assetUri:afrique/48959657"
-            },
-            "summary": "Selon la Minusca, mission de l'ONU pour la Paix en Centrafrique, cette tension a été déclenchée par des crimes chroniques de rackets commis par ces bandes criminelles contre les commerçants du quartier PK5.",
-            "timestamp": 1562909028000,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              }
+            "byline": {
+              "name": "Sophie Hardach",
+              "persons": [
+                {
+                  "function": "BBC Future",
+                  "name": "Sophie Hardach"
+                }
+              ],
+              "title": "BBC Future"
             },
             "cpsType": "STY",
-            "indexImage": {
-              "id": "107845235",
-              "subType": "index",
-              "href": "http://c.files.bbci.co.uk/D006/production/_107845235_centrafriquefight.jpg",
-              "path": "/cpsprodpb/D006/production/_107845235_centrafriquefight.jpg",
-              "height": 549,
-              "width": 976,
-              "altText": "armés",
-              "caption": "Plusieurs groupes armés basé dans le quartier PK5 de Bangui vivent de racket.",
-              "copyrightHolder": "Getty Images"
+            "headlines": {
+              "headline": "Quel est le meilleur âge pour apprendre une langue ?"
             },
-            "imageThumbnail": {
-              "id": "107845237",
-              "subType": "index-thumbnail",
-              "href": "http://c.files.bbci.co.uk/11E26/production/_107845237_centrafriquefight.jpg",
-              "path": "/cpsprodpb/11E26/production/_107845237_centrafriquefight.jpg",
-              "height": 180,
-              "width": 320,
-              "altText": "armés",
-              "caption": "Plusieurs groupes armés basé dans le quartier PK5 de Bangui vivent de racket.",
-              "copyrightHolder": "Getty Images"
+            "id": "urn:bbc:ares::asset:afrique/monde-53422207",
+            "indexImage": {
+              "altText": "Girls during a Belarusian language lesson at a secondary school in the village of Osinovka",
+              "copyrightHolder": "Getty Images",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/37AC/production/_113225241_gettyimages-1201845455.jpg",
+              "id": "113225241",
+              "path": "/cpsprodpb/37AC/production/_113225241_gettyimages-1201845455.jpg",
+              "subType": "index",
+              "type": "image",
+              "width": 976
+            },
+            "language": "fr",
+            "locators": {
+              "assetId": "53422207",
+              "assetUri": "/afrique/monde-53422207",
+              "cpsUrn": "urn:bbc:content:assetUri:afrique/monde-53422207",
+              "curie": "http://www.bbc.co.uk/asset/84cafc99-de75-414c-ae5b-ee13e437a078"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "relatedItems": [
-              {
-                "headlines": {
-                  "headline": "Un consensus trouvé en Centrafrique"
-                },
-                "locators": {
-                  "assetUri": "/afrique/region-47661654",
-                  "cpsUrn": "urn:bbc:content:assetUri:/afrique/region-47661654"
-                },
-                "summary": "Les protagonistes de la crise centrafricaine sont parvenus à un nouveau consensus à Addis Abeba.",
-                "timestamp": 1553215996000,
-                "cpsType": "STY",
-                "id": "urn:bbc:ares::asset:afrique/region-47661654",
-                "type": "cps"
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e2939461b000e9dabf8",
+                  "campaignName": "WS - Educate me"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
               },
-              {
-                "headlines": {
-                  "headline": "La démission du premier ministre centrafricain exigée"
-                },
-                "locators": {
-                  "assetUri": "/afrique/region-47634446",
-                  "cpsUrn": "urn:bbc:content:assetUri:/afrique/region-47634446"
-                },
-                "summary": "11 groupes armés sur les 14 signataires de l'accord de paix de Khartoum ont exigé mardi la démission du premier ministre Firmin Ngrébada.",
-                "timestamp": 1553048894000,
-                "cpsType": "STY",
-                "id": "urn:bbc:ares::asset:afrique/region-47634446",
-                "type": "cps"
-              }
-            ],
-            "id": "urn:bbc:ares::asset:afrique/48959657",
+              "taggings": []
+            },
+            "summary": "Lorsqu'il s'agit d'apprendre une langue étrangère, nous avons tendance à penser que les enfants sont les mieux placés. Mais ce n'est peut-être pas le cas.",
+            "timestamp": 1594911238000,
             "type": "cps"
           },
           {
-            "headlines": {
-              "headline": "Onze morts dans le naufrage d'une pirogue au Niger"
-            },
-            "locators": {
-              "assetUri": "/afrique/48959656",
-              "cpsUrn": "urn:bbc:content:assetUri:afrique/48959656"
-            },
-            "summary": "Les autorités de Maradi précisent également qu'environ quatre passagers de la pirogue sont portés disparus.",
-            "timestamp": 1562907254000,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              }
-            },
             "cpsType": "STY",
-            "indexImage": {
-              "id": "107844837",
-              "subType": "index",
-              "href": "http://c.files.bbci.co.uk/12074/production/_107844837_nigernaufrage.jpg",
-              "path": "/cpsprodpb/12074/production/_107844837_nigernaufrage.jpg",
-              "height": 549,
-              "width": 976,
-              "altText": "inondations",
-              "caption": "En 2017, 56 personnes dont une vingtaine à Niamey, avaient péri dans des inondations.",
-              "copyrightHolder": "Getty Images"
+            "headlines": {
+              "headline": "Les dix citations les plus inspirantes de Nelson Mandela"
             },
+            "id": "urn:bbc:ares::asset:afrique/region-53435456",
             "imageThumbnail": {
-              "id": "107845229",
-              "subType": "index-thumbnail",
-              "href": "http://c.files.bbci.co.uk/1685E/production/_107845229_nigernaufrage.jpg",
-              "path": "/cpsprodpb/1685E/production/_107845229_nigernaufrage.jpg",
+              "altText": "Nelson Mandela lors d'une visite de l'ancien président américain Bill Clinton le 17 juillet 2012 chez lui à Qunu, dans la province du Cap-Oriental, à la veille de son 94e anniversaire",
+              "caption": "Nelson Mandela lors d'une visite de l'ancien président américain Bill Clinton le 17 juillet 2012 chez lui à Qunu, dans la province du Cap-Oriental, à la veille de son 94e anniversaire.",
+              "copyrightHolder": "AFP/Getty Images",
               "height": 180,
-              "width": 320,
-              "altText": "inondations",
-              "caption": "En 2017, 56 personnes dont une vingtaine à Niamey, avaient péri dans des inondations.",
-              "copyrightHolder": "Getty Images"
+              "href": "http://c.files.bbci.co.uk/B2DC/production/_113488754_mandela10.jpg",
+              "id": "113488754",
+              "path": "/cpsprodpb/B2DC/production/_113488754_mandela10.jpg",
+              "subType": "index-thumbnail",
+              "type": "image",
+              "width": 320
+            },
+            "indexImage": {
+              "altText": "Nelson Mandela lors d'une visite de l'ancien président américain Bill Clinton le 17 juillet 2012 chez lui à Qunu, dans la province du Cap-Oriental, à la veille de son 94e anniversaire",
+              "caption": "Nelson Mandela lors d'une visite de l'ancien président américain Bill Clinton le 17 juillet 2012 chez lui à Qunu, dans la province du Cap-Oriental, à la veille de son 94e anniversaire.",
+              "copyrightHolder": "AFP/Getty Images",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/CB78/production/_113488025_mandela10.jpg",
+              "id": "113488025",
+              "path": "/cpsprodpb/CB78/production/_113488025_mandela10.jpg",
+              "subType": "index",
+              "type": "image",
+              "width": 976
+            },
+            "language": "fr",
+            "locators": {
+              "assetId": "53435456",
+              "assetUri": "/afrique/region-53435456",
+              "cpsUrn": "urn:bbc:content:assetUri:afrique/region-53435456",
+              "curie": "http://www.bbc.co.uk/asset/a994a560-e056-4e37-b77c-2c04b3d20bdf"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "relatedItems": [
-              {
-                "headlines": {
-                  "headline": "Au moins 30 morts dans le naufrage d’un bateau en RDC"
-                },
-                "locators": {
-                  "assetUri": "/afrique/region-48418514",
-                  "cpsUrn": "urn:bbc:content:assetUri:/afrique/region-48418514"
-                },
-                "summary": "Le bilan provisoire a été fourni par les autorités locales dimanche.",
-                "timestamp": 1558918244000,
-                "cpsType": "STY",
-                "id": "urn:bbc:ares::asset:afrique/region-48418514",
-                "type": "cps"
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e2139461b000e9dabf7",
+                  "campaignName": "WS - Inspire me"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
               },
-              {
-                "headlines": {
-                  "headline": "Inondations au Niger"
-                },
-                "locators": {
-                  "assetUri": "/afrique/region-41281980",
-                  "cpsUrn": "urn:bbc:content:assetUri:/afrique/region-41281980"
-                },
-                "summary": "50 morts et 47 blessés après des inondations provoquées par les pluies torrentielles au Niger.",
-                "timestamp": 1505498287000,
-                "cpsType": "PGL",
-                "id": "urn:bbc:ares::asset:afrique/region-41281980",
-                "type": "cps"
-              }
-            ],
-            "id": "urn:bbc:ares::asset:afrique/48959656",
+              "taggings": []
+            },
+            "summary": "Le 18 juillet marque l'anniversaire de la naissance de Nelson Mandela, et en novembre 2009, l'Assemblée générale des Nations unies a déclaré cette date Journée internationale Nelson Mandela en reconnaissance de la contribution de l'ancien président sud-africain à la culture de la paix et de la liberté. Retrouvez la sagesse de Madiba en 10 citations clefs.",
+            "timestamp": 1595074304000,
             "type": "cps"
           },
           {
-            "headlines": {
-              "headline": "Des chiites inculpés pour violences au Nigeria"
-            },
-            "locators": {
-              "assetUri": "/afrique/48959655",
-              "cpsUrn": "urn:bbc:content:assetUri:afrique/48959655"
-            },
-            "summary": "Le Mouvement islamique a annoncé mercredi que la police avait abattu mardi par balle deux de ses membres alors qu'ils participaient à une manifestation devant le parlement d'Abuja.",
-            "timestamp": 1562901091000,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              }
-            },
             "cpsType": "STY",
-            "indexImage": {
-              "id": "107844256",
-              "subType": "index",
-              "href": "http://c.files.bbci.co.uk/FEDC/production/_107844256_nigeriaprotest.jpg",
-              "path": "/cpsprodpb/FEDC/production/_107844256_nigeriaprotest.jpg",
-              "height": 549,
-              "width": 976,
-              "altText": "manifestants",
-              "caption": "Des policiers nigérians tirent des gaz lacrymogènes sur des partisans du Mouvement islamique du Nigéria (IMN) à Abuja, le 30 octobre 2018.",
-              "copyrightHolder": "Getty Images"
+            "headlines": {
+              "headline": "Le président du Gabon nomme la première femme Premier ministre du pays"
             },
+            "id": "urn:bbc:ares::asset:afrique/region-53446125",
             "imageThumbnail": {
-              "id": "107844829",
-              "subType": "index-thumbnail",
-              "href": "http://c.files.bbci.co.uk/16AAC/production/_107844829_nigeriaprotest.jpg",
-              "path": "/cpsprodpb/16AAC/production/_107844829_nigeriaprotest.jpg",
+              "altText": "Rose Christiane Ossouka Raponda",
+              "caption": "Rose Christiane Ossouka Raponda a été la première femme maire de Libreville",
+              "copyrightHolder": "STEEVE JORDAN",
               "height": 180,
-              "width": 320,
-              "altText": "manifestants",
-              "caption": "Des policiers nigérians tirent des gaz lacrymogènes sur des partisans du Mouvement islamique du Nigéria (IMN) à Abuja, le 30 octobre 2018.",
-              "copyrightHolder": "Getty Images"
+              "href": "http://c.files.bbci.co.uk/E95A/production/_113483795_pmgabonok.jpg",
+              "id": "113483795",
+              "path": "/cpsprodpb/E95A/production/_113483795_pmgabonok.jpg",
+              "subType": "index-thumbnail",
+              "type": "image",
+              "width": 320
+            },
+            "indexImage": {
+              "altText": "Rose Christiane Ossouka Raponda",
+              "caption": "Rose Christiane Ossouka Raponda a été la première femme maire de Libreville",
+              "copyrightHolder": "STEEVE JORDAN",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/9B3A/production/_113483793_pmgabonok.jpg",
+              "id": "113483793",
+              "path": "/cpsprodpb/9B3A/production/_113483793_pmgabonok.jpg",
+              "subType": "index",
+              "type": "image",
+              "width": 976
+            },
+            "language": "fr",
+            "locators": {
+              "assetId": "53446125",
+              "assetUri": "/afrique/region-53446125",
+              "cpsUrn": "urn:bbc:content:assetUri:afrique/region-53446125",
+              "curie": "http://www.bbc.co.uk/asset/356ee30a-ce61-4658-be25-0c6a17b40901"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "relatedItems": [
-              {
-                "headlines": {
-                  "headline": "Des heurts meurtriers au Nigeria"
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e2139461b000e9dabf7",
+                  "campaignName": "WS - Inspire me"
                 },
-                "locators": {
-                  "assetUri": "/afrique/region-37632131",
-                  "cpsUrn": "urn:bbc:content:assetUri:/afrique/region-37632131"
-                },
-                "summary": "Au moins huit personnes ont été tuées dans affrontements entre les forces de sécurité nigérianes et des musulmans chiites, à Funtua, une ville située dans le nord du Nigeria, a annoncé un témoin au service en langue haussa de la BBC.",
-                "timestamp": 1476273588000,
-                "cpsType": "STY",
-                "id": "urn:bbc:ares::asset:afrique/region-37632131",
-                "type": "cps"
+                {
+                  "campaignId": "5a988e4739461b000e9dabfc",
+                  "campaignName": "WS - Update me"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
               },
-              {
-                "headlines": {
-                  "headline": "Quatre Nigérians aux arrêts pour avoir parodié un mariage"
-                },
-                "locators": {
-                  "assetUri": "/afrique/region-48946237",
-                  "cpsUrn": "urn:bbc:content:assetUri:/afrique/region-48946237"
-                },
-                "summary": "Il leur est reproché de s'être \"moqués du caractère sacré de l'institution\"",
-                "timestamp": 1562809065000,
-                "cpsType": "STY",
-                "id": "urn:bbc:ares::asset:afrique/region-48946237",
-                "type": "cps"
-              }
-            ],
-            "id": "urn:bbc:ares::asset:afrique/48959655",
+              "taggings": []
+            },
+            "summary": "Rose Christiane Ossouka Raponda a été nommée à la tête du gouvernement jeudi. Elle succède à Julien Nkoghe Bekalé.",
+            "timestamp": 1594996711000,
             "type": "cps"
           }
         ],
