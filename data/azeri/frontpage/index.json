@@ -3258,57 +3258,59 @@
         "title": "Special reports 2",
         "items": [
           {
-            "headlines": {
-              "headline": "Kişilərin intiharı: o, qadınların intiharından nəylə fərqlənir və nə üçün daha tez-tez baş verir"
-            },
-            "locators": {
-              "assetUri": "/azeri/international-48737267",
-              "cpsUrn": "urn:bbc:content:assetUri:azeri/international-48737267"
-            },
-            "summary": "Bu statistika bütün dünyada belədir: depressiyadan daha çox qadınlar əziyyət çəkirlər, intihara da daha çox onlar meyllidirlər, amma intihar edənlərin çoxu kişilərdir.",
-            "timestamp": 1561293421000,
             "byline": {
-              "name": "Helene Schumacher",
-              "title": "BBC Future",
+              "name": "İlkin Həsənov",
               "persons": [
                 {
-                  "name": "Хелен Шумахер",
-                  "function": "BBC Future"
+                  "function": "Bakı, BBC News Azərbaycanca",
+                  "name": "İlkin Həsənov"
                 }
-              ]
-            },
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
-                "categoryName": "Feature"
-              },
-              "campaigns": [
-                {
-                  "campaignId": "5a988e2939461b000e9dabf8",
-                  "campaignName": "WS - Educate me"
-                },
-                {
-                  "campaignId": "5a988e3739461b000e9dabfa",
-                  "campaignName": "WS - Give me perspective"
-                }
-              ]
+              ],
+              "title": "Bakı, BBC News Azərbaycanca"
             },
             "cpsType": "STY",
+            "headlines": {
+              "headline": "Kür quruyur. Su problemi necə həll olunacaq?"
+            },
+            "id": "urn:bbc:ares::asset:azeri/azerbaijan-53237350",
             "indexImage": {
-              "id": "107333410",
+              "altText": "Kür çayı Neftçala",
+              "caption": "Kür çayınıın Neftçala ərazisindən keçən hissəsi",
+              "copyrightHolder": "Samir Əsədli",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/16824/production/_113169129_photo-2020-06-30-16-19-39.jpg",
+              "id": "113169129",
+              "path": "/cpsprodpb/16824/production/_113169129_photo-2020-06-30-16-19-39.jpg",
               "subType": "index",
-              "href": "http://c.files.bbci.co.uk/0599/production/_107333410_sui2.jpg",
-              "path": "/cpsprodpb/0599/production/_107333410_sui2.jpg",
-              "height": 900,
-              "width": 1600,
-              "altText": "Плачущий мужчина",
-              "copyrightHolder": "Getty Images"
+              "type": "image",
+              "width": 976
+            },
+            "language": "az",
+            "locators": {
+              "assetId": "53237350",
+              "assetUri": "/azeri/azerbaijan-53237350",
+              "cpsUrn": "urn:bbc:content:assetUri:azeri/azerbaijan-53237350",
+              "curie": "http://www.bbc.co.uk/asset/adb74366-238f-4641-bc92-a06076872061"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "id": "urn:bbc:ares::asset:azeri/international-48737267",
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e3739461b000e9dabfa",
+                  "campaignName": "WS - Give me perspective"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Analysis",
+                "categoryName": "Analysis"
+              },
+              "taggings": []
+            },
+            "summary": "Azərbaycanın ən böyük çayı olan və su təchizatında ölkənin əsas su mənbəyi sayılan Kür çayında suyun səviyyəsinin kəskin azalması baş verib. Mütəxəssislər Kür çayında suyun azalmasının bir neçə təbii və süni səbəblə əlaqələndirirlər.",
+            "timestamp": 1593530975000,
             "type": "cps"
           }
         ],
