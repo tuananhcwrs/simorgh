@@ -3225,33 +3225,38 @@ Object {
         "items": Array [
           Object {
             "byline": Object {
-              "name": "Helene Schumacher",
+              "name": "İlkin Həsənov",
               "persons": Array [
                 Object {
-                  "function": "BBC Future",
-                  "name": "Хелен Шумахер",
+                  "function": "Bakı, BBC News Azərbaycanca",
+                  "name": "İlkin Həsənov",
                 },
               ],
-              "title": "BBC Future",
+              "title": "Bakı, BBC News Azərbaycanca",
             },
             "cpsType": "STY",
             "headlines": Object {
-              "headline": "Kişilərin intiharı: o, qadınların intiharından nəylə fərqlənir və nə üçün daha tez-tez baş verir",
+              "headline": "Kür quruyur. Su problemi necə həll olunacaq?",
             },
-            "id": "urn:bbc:ares::asset:azeri/international-48737267",
+            "id": "urn:bbc:ares::asset:azeri/azerbaijan-53237350",
             "indexImage": Object {
-              "altText": "Плачущий мужчина",
-              "copyrightHolder": "Getty Images",
-              "height": 900,
-              "href": "http://c.files.bbci.co.uk/0599/production/_107333410_sui2.jpg",
-              "id": "107333410",
-              "path": "/cpsprodpb/0599/production/_107333410_sui2.jpg",
+              "altText": "Kür çayı Neftçala",
+              "caption": "Kür çayınıın Neftçala ərazisindən keçən hissəsi",
+              "copyrightHolder": "Samir Əsədli",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/16824/production/_113169129_photo-2020-06-30-16-19-39.jpg",
+              "id": "113169129",
+              "path": "/cpsprodpb/16824/production/_113169129_photo-2020-06-30-16-19-39.jpg",
               "subType": "index",
-              "width": 1600,
+              "type": "image",
+              "width": 976,
             },
+            "language": "az",
             "locators": Object {
-              "assetUri": "/azeri/international-48737267",
-              "cpsUrn": "urn:bbc:content:assetUri:azeri/international-48737267",
+              "assetId": "53237350",
+              "assetUri": "/azeri/azerbaijan-53237350",
+              "cpsUrn": "urn:bbc:content:assetUri:azeri/azerbaijan-53237350",
+              "curie": "http://www.bbc.co.uk/asset/adb74366-238f-4641-bc92-a06076872061",
             },
             "options": Object {
               "isBreakingNews": false,
@@ -3260,21 +3265,18 @@ Object {
             "passport": Object {
               "campaigns": Array [
                 Object {
-                  "campaignId": "5a988e2939461b000e9dabf8",
-                  "campaignName": "WS - Educate me",
-                },
-                Object {
                   "campaignId": "5a988e3739461b000e9dabfa",
                   "campaignName": "WS - Give me perspective",
                 },
               ],
               "category": Object {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
-                "categoryName": "Feature",
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Analysis",
+                "categoryName": "Analysis",
               },
+              "taggings": Array [],
             },
-            "summary": "Bu statistika bütün dünyada belədir: depressiyadan daha çox qadınlar əziyyət çəkirlər, intihara da daha çox onlar meyllidirlər, amma intihar edənlərin çoxu kişilərdir.",
-            "timestamp": 1561293421000,
+            "summary": "Azərbaycanın ən böyük çayı olan və su təchizatında ölkənin əsas su mənbəyi sayılan Kür çayında suyun səviyyəsinin kəskin azalması baş verib. Mütəxəssislər Kür çayında suyun azalmasının bir neçə təbii və süni səbəblə əlaqələndirirlər.",
+            "timestamp": 1593530975000,
             "type": "cps",
           },
         ],
