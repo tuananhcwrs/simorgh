@@ -485,45 +485,64 @@
         "title": "More news",
         "items": [
           {
-            "headlines": {
-              "headline": "Abacyekwaho gucuruza i Burayi abakobwa ba Nigeria bafashwe"
-            },
-            "locators": {
-              "assetUri": "/gahuza/amakuru-48948508",
-              "cpsUrn": "urn:bbc:content:assetUri:gahuza/amakuru-48948508"
-            },
-            "summary": "Ibihugu binyuranye by'Afurika bivugwamo ikibazo cy'icuruzwa ry'abantu batwarwa bizezwa akazi keza mu bihugu bikize, bagerayo bagakoreshwa imirimo batabwiwe, nk'uburaya.",
-            "timestamp": 1562840682000,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              },
-              "campaigns": [
+            "byline": {
+              "name": "By Veronique Greenwood",
+              "persons": [
                 {
-                  "campaignId": "5a988e3739461b000e9dabfa",
-                  "campaignName": "WS - Give me perspective"
+                  "function": "BBC Future",
+                  "name": "Veronique Greenwood"
                 }
-              ]
+              ],
+              "title": "BBC Future"
             },
             "cpsType": "STY",
+            "headlines": {
+              "headline": "Kuki abagore bibungenze hari ivyo kurya batwaririza?"
+            },
+            "id": "urn:bbc:ares::asset:gahuza/amakuru-53487801",
             "indexImage": {
-              "id": "107837504",
+              "altText": "Umugore w'umwirabura yibungenze ariko ararya shokola n'ibiraya bikaranze vyumye (potato chips)",
+              "caption": "Abahinga bavuga ko gutwaririza ari ibintu biri mu mutwe kurusha ibiri mu mubiri ubwawo",
+              "copyrightHolder": "Getty Images",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/103B5/production/_113458466_cravingslady.png",
+              "id": "113458466",
+              "path": "/cpsprodpb/103B5/production/_113458466_cravingslady.png",
               "subType": "index",
-              "href": "http://c.files.bbci.co.uk/9E7D/production/_107837504_uburay.jpg",
-              "path": "/cpsprodpb/9E7D/production/_107837504_uburay.jpg",
-              "height": 443,
-              "width": 788,
-              "altText": "Icuruzwa ry'abantu",
-              "caption": "Abantu batwarwa mu icuruzwa ry'abantu bizezwa imirimo myiza mu bihugu bikize bagerayo bagakoreshwa imirimo mbi irimo n'uburaya",
-              "copyrightHolder": "Getty Images"
+              "type": "image",
+              "width": 976
+            },
+            "language": "rw",
+            "locators": {
+              "assetId": "53487801",
+              "assetUri": "/gahuza/amakuru-53487801",
+              "cpsUrn": "urn:bbc:content:assetUri:gahuza/amakuru-53487801",
+              "curie": "http://www.bbc.co.uk/asset/a783240b-07e4-4a9f-b348-53a9168e1ad0"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "overtypedSummary": " ",
-            "id": "urn:bbc:ares::asset:gahuza/amakuru-48948508",
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e1739461b000e9dabf6",
+                  "campaignName": "WS - CS"
+                },
+                {
+                  "campaignId": "5a988e2939461b000e9dabf8",
+                  "campaignName": "WS - Educate me"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
+                "categoryName": "Feature"
+              },
+              "taggings": []
+            },
+            "prominence": "none",
+            "summary": "Ni iki gitera gutwaririza ku bagore bibungenze? Gishobora kuba atari ico wibaza. Hagenda haraboneka ibimenyetso vyinshi vyerekana ko biterwa ahanini n'ibiri mu mutwe hako vyotewe n'imbanyi.",
+            "timestamp": 1595342953000,
             "type": "cps"
           },
           {
@@ -1904,92 +1923,128 @@
             "type": "cps"
           },
           {
-            "headlines": {
-              "headline": "Umugore amaze imyaka itatu abana n’umurambo wa nyina"
-            },
-            "locators": {
-              "assetUri": "/gahuza/imikino-48960769",
-              "cpsUrn": "urn:bbc:content:assetUri:gahuza/imikino-48960769"
-            },
-            "summary": "Umukobwa we w'imyaka 47, ashinjwa ko atabashije gufasha nyina igihe ibyo byabaga kuko ngo \"yapfuye hashize iminsi\" yituye hasi mu buryo butagombaga kumuhitana.",
-            "timestamp": 1562913536000,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              },
-              "campaigns": [
-                {
-                  "campaignId": "5a988e3e39461b000e9dabfb",
-                  "campaignName": "WS - Keep me on trend"
-                }
-              ]
-            },
             "cpsType": "STY",
+            "headlines": {
+              "headline": "Nyuma y'impaka z'iminsi 4 abategetsi b'Uburayi bumvikanye"
+            },
+            "id": "urn:bbc:ares::asset:gahuza/amakuru-53475211",
             "indexImage": {
-              "id": "107845374",
-              "subType": "index",
-              "href": "http://c.files.bbci.co.uk/B8FA/production/_107845374_crimescene.jpg",
-              "path": "/cpsprodpb/B8FA/production/_107845374_crimescene.jpg",
+              "altText": "European Council President Charles Michel and European Commission President Ursula Von Der Leyen do an elbow bump at the end of a news conference following a four-day European summit at the European Council in Brussels, Belgium, July 21, 2020.",
+              "copyrightHolder": "Reuters",
               "height": 549,
-              "width": 976,
-              "altText": "Crime scene",
-              "copyrightHolder": "Getty Images"
+              "href": "http://c.files.bbci.co.uk/E1AF/production/_113557775_hi062555924.jpg",
+              "id": "113557775",
+              "path": "/cpsprodpb/E1AF/production/_113557775_hi062555924.jpg",
+              "subType": "index",
+              "type": "image",
+              "width": 976
+            },
+            "language": "rw",
+            "locators": {
+              "assetId": "53475211",
+              "assetUri": "/gahuza/amakuru-53475211",
+              "cpsUrn": "urn:bbc:content:assetUri:gahuza/amakuru-53475211",
+              "curie": "http://www.bbc.co.uk/asset/7cfc9770-d5e2-44f9-80b9-023ddc399889"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "overtypedSummary": " ",
-            "id": "urn:bbc:ares::asset:gahuza/imikino-48960769",
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e4739461b000e9dabfc",
+                  "campaignName": "WS - Update me"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
+              },
+              "taggings": []
+            },
+            "prominence": "none",
+            "relatedItems": [
+              {
+                "cpsType": "STY",
+                "headlines": {
+                  "headline": "Uburayi bwafunguriye umupaka ibihugu 14 birimo u Rwanda"
+                },
+                "id": "urn:bbc:ares::asset:gahuza/amakuru-53224256",
+                "language": "rw",
+                "locators": {
+                  "assetUri": "/gahuza/amakuru-53224256",
+                  "cpsUrn": "urn:bbc:content:assetUri:/gahuza/amakuru-53224256"
+                },
+                "summary": "Mu byashingiweho hakorwa uru rutonde, EU ivuga ko harimo uko icyorezo cyifashe n'ingamba zo kukirwanya muri ibyo bihugu, ndetse n'ibigendanye n'imibereho n'ubukungu.",
+                "timestamp": 1593530636000,
+                "type": "cps"
+              },
+              {
+                "cpsType": "STY",
+                "headlines": {
+                  "headline": "Kagame ashinja Uburayi 'ubwibone bwo kumva ko baruta abandi'"
+                },
+                "id": "urn:bbc:ares::asset:gahuza/amakuru-48762411",
+                "language": "rw",
+                "locators": {
+                  "assetUri": "/gahuza/amakuru-48762411",
+                  "cpsUrn": "urn:bbc:content:assetUri:/gahuza/amakuru-48762411"
+                },
+                "summary": "Paul Kagame w'u Rwanda anenga imiryango iharanira uburenganzira bwa kiremwamuntu mu cyo yita ubwibone bwo gusumba abandi.",
+                "timestamp": 1561476463000,
+                "type": "cps"
+              }
+            ],
+            "summary": "Ibiganiro byatangiye ku wa gatanu byabayemo kutumvikana hagati y'ibihugu byazahajwe cyane na Covid-19 hamwe n'ibihugu byirinze byo byari bitewe impungenge n'ingano y'imari ikenewe.",
+            "timestamp": 1595308908000,
             "type": "cps"
           },
           {
-            "headlines": {
-              "headline": "Ihohotera rishingiye gu gitsina mu buyobozi bwa Afghanistan"
-            },
-            "locators": {
-              "assetUri": "/gahuza/48952014",
-              "cpsUrn": "urn:bbc:content:assetUri:gahuza/48952014"
-            },
-            "summary": "Hejuru mu butegetsi bwa Afghanistan haravugwa ibyaha by'ihohotera rishingiye ku gitsina no guhatira abagore gusambana. Itohozamakuru rya BBC ryaganiriye n'ababikorewe bavuga ko byabaye nk'umuco, ariko abategetsi baho bahakana ibi bikorwa",
-            "timestamp": 1562856217000,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              },
-              "campaigns": [
-                {
-                  "campaignId": "5a988e3739461b000e9dabfa",
-                  "campaignName": "WS - Give me perspective"
-                }
-              ]
-            },
             "cpsType": "STY",
+            "headlines": {
+              "headline": "Umuhigo: ku munsi umwe umutungo wa Jeff Bezos wiyongereyeho miliyari $13"
+            },
+            "id": "urn:bbc:ares::asset:gahuza/amakuru-53482947",
             "indexImage": {
-              "id": "107838463",
+              "altText": "Jeff Bezos",
+              "caption": "Jeff Bezos ubu avuga ko ari gushora imari mu bumenyi bw'isanzure agamije gushaka ibisubizo ku bibazo bimwe byo ku isi",
+              "copyrightHolder": "Getty Images",
+              "height": 549,
+              "href": "http://c.files.bbci.co.uk/58CE/production/_113543722_jeff-bezos.jpg",
+              "id": "113543722",
+              "path": "/cpsprodpb/58CE/production/_113543722_jeff-bezos.jpg",
               "subType": "index",
-              "href": "http://c.files.bbci.co.uk/8E83/production/_107838463_uyumugoreavugakominisitirimuriguverinomayageragejekumuhatirakobasambana.jpg",
-              "path": "/cpsprodpb/8E83/production/_107838463_uyumugoreavugakominisitirimuriguverinomayageragejekumuhatirakobasambana.jpg",
-              "height": 371,
-              "width": 660,
-              "altText": "Uyu mugore avuga ko minisitiri muri guverinoma yagerageje kumuhatira ko basambana",
-              "caption": "Uyu mugore avuga ko minisitiri muri guverinoma yagerageje kumuhatira ko basambana",
-              "copyrightHolder": "BBC"
+              "type": "image",
+              "width": 976
+            },
+            "language": "rw",
+            "locators": {
+              "assetId": "53482947",
+              "assetUri": "/gahuza/amakuru-53482947",
+              "cpsUrn": "urn:bbc:content:assetUri:gahuza/amakuru-53482947",
+              "curie": "http://www.bbc.co.uk/asset/2a707b9e-e089-4245-be7a-d7321159501c"
             },
             "options": {
               "isBreakingNews": false,
               "isFactCheck": false
             },
-            "section": {
-              "subType": "IDX",
-              "name": "Urupapuro rw'itangiriro",
-              "uri": "/gahuza/front_page",
-              "type": "simple"
+            "passport": {
+              "campaigns": [
+                {
+                  "campaignId": "5a988e4739461b000e9dabfc",
+                  "campaignName": "WS - Update me"
+                }
+              ],
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
+              },
+              "taggings": []
             },
-            "overtypedSummary": " ",
-            "id": "urn:bbc:ares::asset:gahuza/48952014",
+            "prominence": "none",
+            "summary": "Mackenzie Bezos, wahoze ari umugore we, ejo kuwa mbere nawe yungutse miliyari $4.6, ibi bituma ubu ari umuntu wa 13 ukize cyane ku isi.",
+            "timestamp": 1595314172000,
             "type": "cps"
           },
           {
