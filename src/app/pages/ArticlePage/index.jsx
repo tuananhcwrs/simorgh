@@ -46,6 +46,7 @@ import {
   getMentions,
   getLang,
 } from '#lib/utilities/parseAssetData';
+import { applyBasicPageHandlers } from '../things';
 
 const componentsToRender = {
   headline: headings,
@@ -148,4 +149,6 @@ ArticlePage.defaultProps = {
   mostReadEndpointOverride: null,
 };
 
-export default ArticlePage;
+export default applyBasicPageHandlers({
+  withVariant: true,
+})(ArticlePage);
