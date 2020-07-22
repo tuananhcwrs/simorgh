@@ -1,4 +1,3 @@
-import pipe from 'ramda/src/pipe';
 import React, { useContext } from 'react';
 import { string, shape, object } from 'prop-types';
 import styled from 'styled-components';
