@@ -7,6 +7,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'Talla',
+    },
     lang: `ha`,
     articleAuthor: 'https://www.facebook.com/bbcnews',
     articleTimestampPrefix: 'Wanda aka sabunta',
@@ -27,6 +31,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Bayani, ',
     imageCopyrightOffscreenText: 'Asalin hoton, ',
     locale: `ha-GH`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'ha',
     datetimeLocale: `ha`,
     service: 'hausa',
     serviceName: 'Hausa',
@@ -46,9 +52,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Talla',
-      },
       seeAll: 'Duba su baki daya',
       home: 'Labaran Duniya',
       currentPage: 'Shafin da ake ciki',
@@ -176,8 +179,8 @@ export const service = {
             'BBC ba za ta dauki alhakin abubuwan da wasu shafukan daban suka wallafa ba.',
         },
         skipLink: {
-          text: 'Skip %provider_name% post',
-          endTextVisuallyHidden: 'End of %provider_name% post',
+          text: 'Kauce wa %provider_name%',
+          endTextVisuallyHidden: 'Karshen labarin da aka sa a %provider_name%',
         },
       },
       topStoriesTitle: 'Babban Labari',
@@ -192,6 +195,7 @@ export const service = {
     },
     radioSchedule: {
       hasRadioSchedule: true,
+      onLiveRadioPage: true,
       onFrontPage: true,
       frontPagePosition: 'Verticals',
       frequenciesPageUrl: '/hausa/institutional/2011/11/000001_mitocinmu',

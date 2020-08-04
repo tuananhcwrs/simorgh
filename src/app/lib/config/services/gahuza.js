@@ -7,6 +7,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'Kwamamaza',
+    },
     lang: `rw`,
     articleAuthor: 'https://www.facebook.com/bbcnews',
     articleTimestampPrefix: 'Vyavuguruwe ',
@@ -27,6 +31,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Insiguro, ',
     imageCopyrightOffscreenText: 'Ahavuye isanamu, ',
     locale: `rw-RW`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'rw',
     datetimeLocale: `rw`,
     service: 'gahuza',
     serviceName: 'Gahuza',
@@ -46,9 +52,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Kwamamaza',
-      },
       seeAll: 'Raba vyose',
       home: `Urupapuro rw'itangiriro`,
       currentPage: 'Uru rupapuro',

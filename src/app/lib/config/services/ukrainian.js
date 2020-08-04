@@ -7,6 +7,10 @@ import withContext from '../../../contexts/utils/withContext';
 import { mainTranslations as russianMainTranslations } from './russian';
 
 const baseServiceConfig = {
+  ads: {
+    hasAds: false,
+    advertisementLabel: 'Реклама',
+  },
   articleAuthor: `http://www.facebook.com/bbcnews`,
   articleTimestampPrefix: 'Оновлення даних: ',
   atiAnalyticsAppName: 'news-ukrainian',
@@ -42,9 +46,6 @@ const baseServiceConfig = {
     brandLogoColour: `${C_WHITE}`,
   },
   translations: {
-    ads: {
-      advertisementLabel: 'Реклама',
-    },
     seeAll: 'Подивитись все',
     home: 'Головна',
     currentPage: 'Поточна сторінка',
@@ -274,6 +275,8 @@ export const service = {
     ...baseServiceConfig,
     datetimeLocale: 'uk',
     locale: 'uk_UA',
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'uk',
     lang: 'uk',
   },
   'ru-UA': {
@@ -284,6 +287,8 @@ export const service = {
     },
     datetimeLocale: 'ru',
     locale: 'ru_UA',
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'ru',
     lang: 'ru-UA',
     headerFooterLang: 'uk',
   },

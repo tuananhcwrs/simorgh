@@ -7,6 +7,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'Tori we dem pay for',
+    },
     lang: 'pcm',
     articleAuthor: 'https://www.facebook.com/bbcnews',
     articleTimestampPrefix: 'New Informate',
@@ -50,9 +54,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Tori we dem pay for',
-      },
       seeAll: 'See everitin',
       home: 'Home',
       currentPage: 'Page where you dey',
@@ -166,13 +167,13 @@ export const service = {
       },
       socialEmbed: {
         caption: {
-          textPrefixVisuallyHidden: 'Video caption, ',
+          textPrefixVisuallyHidden: 'Wetin we call dis Video, ',
           text: 'Warning: Third party content may contain adverts',
         },
         fallback: {
           text: 'Content is not available',
           linkText: 'View content on %provider_name%',
-          linkTextSuffixVisuallyHidden: ', external',
+          linkTextSuffixVisuallyHidden: ', outside',
           warningText: 'De external site no concern BBC.',
         },
         skipLink: {

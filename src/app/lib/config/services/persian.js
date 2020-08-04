@@ -12,6 +12,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'آگهی',
+    },
     lang: 'fa',
     product: 'BBC News',
     articleAuthor: 'https://www.facebook.com/bbcnews',
@@ -32,6 +36,8 @@ export const service = {
     defaultCaptionOffscreenText: 'توضیح، ',
     imageCopyrightOffscreenText: 'منبع تصویر، ',
     locale: 'fa',
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'fa',
     datetimeLocale: 'fa',
     service: 'persian',
     serviceName: 'Persian',
@@ -52,9 +58,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'آگهی',
-      },
       seeAll: 'بیشتر',
       home: 'صفحه اول',
       currentPage: 'صفحه فعلی',
@@ -208,6 +211,7 @@ export const service = {
     },
     radioSchedule: {
       hasRadioSchedule: true,
+      onLiveRadioPage: true,
       onFrontPage: false,
       frontPagePosition: '',
       onIdxPage: true,

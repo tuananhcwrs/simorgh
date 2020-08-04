@@ -7,6 +7,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'ਇਸ਼ਤਿਹਾਰ',
+    },
     lang: `pa`,
     articleAuthor: `https://www.facebook.com/bbcnews`,
     articleTimestampPrefix: 'ਅਪਡੇਟ',
@@ -27,6 +31,8 @@ export const service = {
     defaultCaptionOffscreenText: 'ਕੈਪਸ਼ਨ, ',
     imageCopyrightOffscreenText: 'ਤਸਵੀਰ ਸਰੋਤ, ',
     locale: `pa-IN`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'pa',
     datetimeLocale: `pa-in`,
     service: 'punjabi',
     serviceName: 'Punjabi',
@@ -46,9 +52,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'ਇਸ਼ਤਿਹਾਰ',
-      },
       seeAll: 'ਸਭ ਦੋਖੇ',
       home: 'ਹੋਮ ਪੇਜ',
       currentPage: 'ਮੌਜੂਦਾ ਪੇਜ',
@@ -154,13 +157,13 @@ export const service = {
       },
       socialEmbed: {
         caption: {
-          textPrefixVisuallyHidden: 'Video caption, ',
-          text: 'Warning: Third party content may contain adverts',
+          textPrefixVisuallyHidden: 'ਵੀਡੀਓ ਕੈਪਸ਼ਨ, ',
+          text: "ਚਿਤਾਵਨੀ: ਬਾਹਰੀ ਸਾਈਟਾਂ ਦੀ ਸਮਗਰੀ 'ਚ ਇਸ਼ਤਿਹਾਰ ਹੋ ਸਕਦੇ ਹਨ",
         },
         fallback: {
-          text: 'Content is not available',
-          linkText: 'View content on %provider_name%',
-          linkTextSuffixVisuallyHidden: ', external',
+          text: 'ਸਮੱਗਰੀ ਉਪਲਬਧ ਨਹੀਂ ਹੈ',
+          linkText: 'ਹੋਰ ਦੇਖਣ ਲਈ %provider_name%',
+          linkTextSuffixVisuallyHidden: ', ਬਾਹਰੀ',
           warningText: 'ਬਾਹਰੀ ਸਾਈਟਾਂ ਦੀ ਸਮਗਰੀ ਲਈ ਬੀਬੀਸੀ ਜ਼ਿੰਮੇਵਾਰ ਨਹੀਂ ਹੈ',
         },
         skipLink: {

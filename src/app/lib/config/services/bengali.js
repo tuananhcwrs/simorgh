@@ -11,6 +11,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'বিজ্ঞাপন',
+    },
     lang: `bn`,
     articleAuthor: `https://www.facebook.com/bbcnews`,
     articleTimestampPrefix: 'আপডেট হয়েছে',
@@ -31,6 +35,8 @@ export const service = {
     defaultCaptionOffscreenText: 'ক্যাপশান, ',
     imageCopyrightOffscreenText: 'ছবির উৎস, ',
     locale: `bn-BD`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'bn',
     datetimeLocale: `bn`,
     service: 'bengali',
     serviceName: 'Bengali',
@@ -51,9 +57,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'বিজ্ঞাপন',
-      },
       seeAll: 'সবগুলো খবর দেখুন',
       home: 'মূলপাতা',
       currentPage: 'বর্তমান পেজ',
@@ -194,6 +197,7 @@ export const service = {
     },
     radioSchedule: {
       hasRadioSchedule: true,
+      onLiveRadioPage: true,
       onFrontPage: false,
       header: 'রেডিও অনুষ্ঠান',
       durationLabel: 'স্থিতিকাল %duration%',

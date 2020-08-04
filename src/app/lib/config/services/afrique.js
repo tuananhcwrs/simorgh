@@ -7,6 +7,10 @@ import 'moment/locale/fr';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: true,
+      advertisementLabel: 'Publicités',
+    },
     lang: `fr`,
     articleAuthor: 'https://www.facebook.com/bbcnews',
     articleTimestampPrefix: 'Mise à jour',
@@ -27,6 +31,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Légende, ',
     imageCopyrightOffscreenText: 'Crédit photo, ',
     locale: `fr`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'fr',
     datetimeLocale: `fr`,
     service: 'afrique',
     serviceName: 'Afrique',
@@ -47,9 +53,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Publicités',
-      },
       seeAll: 'Tout voir',
       home: 'Accueil',
       currentPage: 'Page en cours',
@@ -200,6 +203,7 @@ export const service = {
     },
     radioSchedule: {
       hasRadioSchedule: true,
+      onLiveRadioPage: true,
       onFrontPage: true,
       frontPagePosition: 'Features',
       frequenciesPageUrl:

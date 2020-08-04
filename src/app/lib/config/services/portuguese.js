@@ -16,6 +16,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: true,
+      advertisementLabel: 'Publicidade',
+    },
     lang: `pt-BR`,
     articleAuthor: `https://www.facebook.com/bbcnews`,
     articleTimestampPrefix: 'Atualizado',
@@ -37,6 +41,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Legenda, ',
     imageCopyrightOffscreenText: 'Crédito, ',
     locale: `pt-BR`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'pt',
     datetimeLocale: `pt-br`,
     service: 'portuguese',
     serviceName: 'News Brasil',
@@ -58,9 +64,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Publicidade',
-      },
       recommendationTitle: 'Talvez também te interesse',
       seeAll: 'Ver todos',
       home: 'Início',
@@ -202,6 +205,10 @@ export const service = {
     },
     recommendations: {
       hasStoryRecommendations: true,
+      skipLink: {
+        text: 'Pule %title% e continue lendo',
+        endTextVisuallyHidden: 'Fim do %title%',
+      },
     },
     footer: {
       trustProjectLink: {

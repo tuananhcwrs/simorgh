@@ -22,7 +22,10 @@ export const ServiceContextProvider = ({
   return (
     <LoadableContextProvider
       Context={ServiceContext}
-      dataKey={getLangOverride(pageLang) || getVariant({ service, variant })}
+      dataKey={
+        getLangOverride({ service, pageLang }) ||
+        getVariant({ service, variant })
+      }
     >
       {children}
     </LoadableContextProvider>
@@ -31,13 +34,13 @@ export const ServiceContextProvider = ({
 
 ServiceContextProvider.propTypes = {
   children: node.isRequired,
+  pageLang: string,
   service: string,
   variant: variantPropType,
-  pageLang: string,
 };
 
 ServiceContextProvider.defaultProps = {
+  pageLang: null,
   service: 'default',
   variant: 'default',
-  pageLang: null,
 };

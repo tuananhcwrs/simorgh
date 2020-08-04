@@ -11,6 +11,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'اشتہار',
+    },
     lang: 'ur',
     product: 'BBC News',
     articleAuthor: 'https://www.facebook.com/bbcnews',
@@ -30,6 +34,8 @@ export const service = {
     defaultCaptionOffscreenText: '،کیپشن',
     imageCopyrightOffscreenText: '،تصویر کا ذریعہ',
     locale: 'ur',
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'ur',
     datetimeLocale: 'ur',
     service: 'urdu',
     serviceName: 'Urdu',
@@ -51,9 +57,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'اشتہار',
-      },
       seeAll: 'سب دیکھیں',
       home: 'صفحۂ اول',
       currentPage: 'موجودہ صفحہ',
@@ -167,11 +170,11 @@ export const service = {
           linkText: '%provider_name% مزید دیکھنے کے لیے',
           linkTextSuffixVisuallyHidden: ', بیرونی مواد',
           warningText:
-            ' بی بی سی. بی بی سی بیرونی سائٹس پر شائع شدہ مواد کی ذمہ دار نہیں ہے.',
+            'بی بی سی. بی بی سی بیرونی سائٹس پر شائع شدہ مواد کی ذمہ دار نہیں ہے.',
         },
         skipLink: {
-          text: 'Skip %provider_name% post',
-          endTextVisuallyHidden: 'End of %provider_name% post',
+          text: '%provider_name% پوسٹ نظرانداز کریں',
+          endTextVisuallyHidden: '%provider_name% پوسٹ کا اختتام',
         },
       },
       topStoriesTitle: 'اہم خبریں',
@@ -186,6 +189,7 @@ export const service = {
     },
     radioSchedule: {
       hasRadioSchedule: true,
+      onLiveRadioPage: true,
       onFrontPage: false,
       header: 'ایف ایم بلیٹن',
       durationLabel: '%duration% دورانیہ',

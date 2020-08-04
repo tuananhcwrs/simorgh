@@ -73,9 +73,6 @@ const headerFooterTranslations = {
 
 // Translations used in the main element of the page
 export const mainTranslations = {
-  ads: {
-    advertisementLabel: 'Реклама',
-  },
   seeAll: 'Посмотреть все',
   skipLinkText: 'Перейти к содержанию',
   relatedContent: 'Новости по теме',
@@ -165,6 +162,10 @@ export const mainTranslations = {
 export const service = {
   default: {
     translations: { ...mainTranslations, ...headerFooterTranslations },
+    ads: {
+      hasAds: true,
+      advertisementLabel: 'Реклама',
+    },
     lang: `ru`,
     articleAuthor: `https://www.facebook.com/bbcnews`,
     articleTimestampPrefix: 'Обновлено',
@@ -185,6 +186,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Подпись, ',
     imageCopyrightOffscreenText: 'Автор фото, ',
     locale: `ru-RU`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'ru',
     datetimeLocale: `ru`,
     service: 'russian',
     serviceName: 'Russian',

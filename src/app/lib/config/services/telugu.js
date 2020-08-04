@@ -8,6 +8,10 @@ import 'moment/locale/te';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'వ్యాపార ప్రకటన',
+    },
     lang: `te`,
     articleAuthor: `https://www.facebook.com/bbcnews`,
     articleTimestampPrefix: 'అప్‌డేట్ అయ్యింది',
@@ -28,6 +32,8 @@ export const service = {
     defaultCaptionOffscreenText: 'క్యాప్షన్, ',
     imageCopyrightOffscreenText: 'ఫొటో సోర్స్, ',
     locale: `te-IN`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'te',
     datetimeLocale: `te-in`,
     service: 'telugu',
     serviceName: 'Telugu',
@@ -47,9 +53,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'వ్యాపార ప్రకటన',
-      },
       seeAll: 'అన్నీ చూడండి',
       home: 'హోమ్',
       currentPage: 'ప్రస్తుత పేజీ',
@@ -165,18 +168,18 @@ export const service = {
       },
       socialEmbed: {
         caption: {
-          textPrefixVisuallyHidden: 'Video caption, ',
-          text: 'Warning: Third party content may contain adverts',
+          textPrefixVisuallyHidden: 'వీడియో క్యాప్షన్, ',
+          text: 'హెచ్చరిక: థర్డ్ పార్టీ కంటెంట్‌లో ప్రకటనలు ఉండొచ్చు',
         },
         fallback: {
-          text: 'Content is not available',
-          linkText: 'View content on %provider_name%',
-          linkTextSuffixVisuallyHidden: ', external',
+          text: 'కంటెంట్ అందుబాటులో లేదు',
+          linkText: 'మరింత సమాచారం కోసం %provider_name%',
+          linkTextSuffixVisuallyHidden: ', ఇతర కథనాలు',
           warningText: 'ఇతర వెబ్‌సైట్లలో సమాచారానికి బీబీసీ బాధ్యత వహించదు.',
         },
         skipLink: {
-          text: 'Skip %provider_name% post',
-          endTextVisuallyHidden: 'End of %provider_name% post',
+          text: 'పోస్ట్‌ %provider_name% స్కిప్ చేయండి',
+          endTextVisuallyHidden: 'పోస్ట్ of %provider_name% ముగిసింది',
         },
       },
       topStoriesTitle: 'ముఖ్యమైన కథనాలు',

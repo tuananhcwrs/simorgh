@@ -16,6 +16,10 @@ import 'moment/locale/tr';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'Reklam',
+    },
     lang: `tr`,
     articleAuthor: `https://www.facebook.com/bbcnews`,
     articleTimestampPrefix: 'Güncelleme',
@@ -36,6 +40,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Altyazı, ',
     imageCopyrightOffscreenText: 'Kaynak, ',
     locale: `tr-TR`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'tr',
     datetimeLocale: `tr-tr`,
     service: 'turkce',
     serviceName: 'News Türkçe',
@@ -55,9 +61,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Reklam',
-      },
       recommendationTitle: 'Bunlar da ilginizi çekebilir',
       seeAll: 'Hepsini görüntüle',
       home: 'Ana sayfa',
@@ -198,6 +201,10 @@ export const service = {
     },
     recommendations: {
       hasStoryRecommendations: true,
+      skipLink: {
+        text: 'Skip %title% and continue reading',
+        endTextVisuallyHidden: 'End of %title%',
+      },
     },
     footer: {
       trustProjectLink: {

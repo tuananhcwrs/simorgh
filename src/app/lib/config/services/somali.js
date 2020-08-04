@@ -7,6 +7,10 @@ import withContext from '../../../contexts/utils/withContext';
 
 export const service = {
   default: {
+    ads: {
+      hasAds: false,
+      advertisementLabel: 'Xayeysiin',
+    },
     lang: `so`,
     articleAuthor: 'https://www.facebook.com/bbcnews',
     articleTimestampPrefix: 'Waa la cusbooneysiiyay',
@@ -27,6 +31,8 @@ export const service = {
     defaultCaptionOffscreenText: 'Qoraal, ',
     imageCopyrightOffscreenText: 'Xigashada Sawirka, ',
     locale: `so-SO`,
+    // valid ISO 639-1 code - this is not the same as lang! see explanation in #3405
+    isoLang: 'so',
     datetimeLocale: `so`,
     service: 'somali',
     serviceName: 'Somali',
@@ -46,9 +52,6 @@ export const service = {
       brandLogoColour: `${C_WHITE}`,
     },
     translations: {
-      ads: {
-        advertisementLabel: 'Xayeysiin',
-      },
       seeAll: 'Arag dhammaan',
       home: 'War',
       currentPage: 'Bogga hadda',
@@ -199,6 +202,7 @@ export const service = {
     },
     radioSchedule: {
       hasRadioSchedule: true,
+      onLiveRadioPage: true,
       onFrontPage: true,
       frontPagePosition: 'Features',
       header: 'Barnaamijyada Idaacadda',
