@@ -17,10 +17,11 @@ const AVPlayer = ({
   type,
   skin,
   className,
+  translations,
+  service,
+  isAmp,
+  platform,
 }) => {
-  const { translations, service } = useContext(ServiceContext);
-  const { isAmp, platform } = useContext(RequestContext);
-
   const isValidPlatform = ['amp', 'canonical'].includes(platform);
   const mediaInfo = {
     title,

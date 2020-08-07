@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { shape, string, number, oneOf } from 'prop-types';
 import {
@@ -27,6 +27,7 @@ import LinkedData from '#containers/LinkedData';
 import MetadataContainer from '../../containers/Metadata';
 import { ServiceContext } from '../../contexts/ServiceContext';
 import { RequestContext } from '#contexts/RequestContext';
+import { PopOutPlayerContext } from '#containers/App';
 import StyledTvHeadingContainer from '#containers/OnDemandHeading/StyledTvHeadingContainer';
 import OnDemandParagraphContainer from '#containers/OnDemandParagraph';
 import getPlaceholderImageUrl from '../../routes/utils/getPlaceholderImageUrl';
@@ -108,9 +109,10 @@ const OnDemandTvPage = ({ pageData }) => {
     service,
     translations,
   } = useContext(ServiceContext);
-  const { isAmp } = useContext(RequestContext);
+  const { isAmp, platform } = useContext(RequestContext);
   const location = useLocation();
   const darkMode = useToggle('cinemaModeTV').enabled;
+  const { isEnabled, setIsEnabled } = useContext(PopOutPlayerContext);
 
   const formattedTimestamp = formatUnixTimestamp({
     timestamp: releaseDateTimeStamp,
@@ -210,6 +212,10 @@ const OnDemandTvPage = ({ pageData }) => {
               type="video"
               title="On-demand TV"
               iframeTitle={iframeTitle}
+              translations={translations}
+              service={service}
+              isAmp={isAmp}
+              platform={platform}
             />
           ) : (
             <StyledMessageContainer>
@@ -239,6 +245,8 @@ const OnDemandTvPage = ({ pageData }) => {
             darkMode={darkMode}
           />
         </Grid>
+        <Link to="/afrique/bbc_afrique_tv/tv/w3ct05mp">About</Link>
+        <button onClick={() => setIsEnabled(!isEnabled)} type="button" />
       </StyledGelPageGrid>
     </>
   );
