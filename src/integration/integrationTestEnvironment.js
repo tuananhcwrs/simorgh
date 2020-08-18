@@ -11,13 +11,14 @@ class IntegrationTestEnvironment extends JsdomEnvironment {
     const { platform } = config.testEnvironmentOptions;
     const { pathname, service, runScripts = 'true' } = context.docblockPragmas;
     const pageType = getPageTypeFromTestPath(context.testPath);
+    const queryString = pathname.split('?')[1];
 
     this.pageType = camelCaseToText(pageType);
     this.service = service;
     this.runScripts = runScripts === 'true';
     this.url = `http://localhost:7080${pathname}${
       platform === 'amp' ? '.amp' : ''
-    }`;
+    }${queryString ? `?${queryString}` : ''}`;
   }
 
   async setup() {
