@@ -198,7 +198,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.8",
     "fetch-mock": "^9.10.7",
-    "history": "^4.10.1",
+    "history": "^5.0.0",
     "husky": "^4.2.5",
     "inspectpack": "^4.5.2",
     "jest": "^26.2.2",
