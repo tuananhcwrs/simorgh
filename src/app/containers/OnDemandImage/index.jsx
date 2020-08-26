@@ -21,7 +21,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const getSrc = ({ imageUrl, size }) =>
+const getSrc = ({ imageUrl = '', size }) =>
   `https://${imageUrl.replace('$recipe', `${size}x${size}`)}`;
 
 const getSrcSet = ({ imageUrl, sizes }) =>
