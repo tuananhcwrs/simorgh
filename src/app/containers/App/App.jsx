@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { renderRoutes } from 'react-router-config';
 import { withRouter } from 'react-router';
 import path from 'ramda/src/path';
@@ -6,7 +6,7 @@ import getRouteProps from '#app/routes/utils/fetchPageData/utils/getRouteProps';
 import usePrevious from '#lib/utilities/usePrevious';
 import getToggles from '#app/lib/utilities/getToggles';
 
-export const App = ({ routes, location, initialData, bbcOrigin, history }) => {
+export const App = ({ routes, location, initialData, bbcOrigin }) => {
   const {
     service,
     isAmp,
@@ -26,6 +26,7 @@ export const App = ({ routes, location, initialData, bbcOrigin, history }) => {
     showAdsBasedOnLocation,
   } = initialData;
 
+  const [isStaleData, setIsStaleData] = useState(false);
   const [state, setState] = useState({
     pageData,
     toggles,
@@ -101,7 +102,7 @@ export const App = ({ routes, location, initialData, bbcOrigin, history }) => {
           pageType: nextPageType,
           toggles: nextToggles,
         });
-
+        setIsStaleData(false);
         clearTimeout(loaderTimeout);
         shouldSetFocus.current = true;
         setState({
@@ -121,6 +122,7 @@ export const App = ({ routes, location, initialData, bbcOrigin, history }) => {
         });
       };
 
+      setIsStaleData(true);
       updateAppState();
     }
   }, [routes, location.pathname, toggles]);
@@ -128,14 +130,25 @@ export const App = ({ routes, location, initialData, bbcOrigin, history }) => {
   const previousLocationPath = usePrevious(location.pathname);
 
   // clear the previous path on back clicks
-  const previousPath = history.action === 'POP' ? null : previousLocationPath;
-  return renderRoutes(routes, {
+  const previousPath = previousLocationPath;
+
+  const props = {
     ...state,
     bbcOrigin,
     showAdsBasedOnLocation,
     pathname: location.pathname,
     previousPath,
-  });
+    isStaleData,
+  };
+
+  if (isStaleData) {
+    console.log('is stale data', getRouteProps(routes, previousPath));
+    const PreviousComponent = getRouteProps(routes, previousPath).route.component;
+    return <PreviousComponent {...props} />
+  }
+  console.log('not stale data');
+
+  return renderRoutes(routes, props);
 };
 
 export default withRouter(App);
