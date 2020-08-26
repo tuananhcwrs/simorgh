@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { bool, element } from 'prop-types';
 import { GridWrapper, GridItemConstrainedMedium } from '#lib/styledGrid';
@@ -13,13 +14,11 @@ const WithLoading = Component => {
     isStaleData,
     ...props
   }) => {
-    let ComponentToRender = isStaleData
+    const ComponentToRender = isStaleData
       ? getRouteProps(routes, previousPath).route.component
       : Component;
-    
-    ComponentToRender = Component;
 
-    if (!loading) return <ComponentToRender {...props} />;
+    if (!loading) return <Component {...props} />;
     return (
       <main role="main">
         <GridWrapper>

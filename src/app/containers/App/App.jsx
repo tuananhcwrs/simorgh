@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, memo } from 'react';
+import equals from 'ramda/src/equals';
 import { renderRoutes } from 'react-router-config';
 import { withRouter } from 'react-router';
 import path from 'ramda/src/path';
@@ -26,7 +27,6 @@ export const App = ({ routes, location, initialData, bbcOrigin }) => {
     showAdsBasedOnLocation,
   } = initialData;
 
-  const [isStaleData, setIsStaleData] = useState(false);
   const [state, setState] = useState({
     pageData,
     toggles,
@@ -102,7 +102,7 @@ export const App = ({ routes, location, initialData, bbcOrigin }) => {
           pageType: nextPageType,
           toggles: nextToggles,
         });
-        setIsStaleData(false);
+
         clearTimeout(loaderTimeout);
         shouldSetFocus.current = true;
         setState({
@@ -122,7 +122,6 @@ export const App = ({ routes, location, initialData, bbcOrigin }) => {
         });
       };
 
-      setIsStaleData(true);
       updateAppState();
     }
   }, [routes, location.pathname, toggles]);
@@ -138,17 +137,19 @@ export const App = ({ routes, location, initialData, bbcOrigin }) => {
     showAdsBasedOnLocation,
     pathname: location.pathname,
     previousPath,
-    isStaleData,
+    routes,
   };
 
-  if (isStaleData) {
-    console.log('is stale data', getRouteProps(routes, previousPath));
-    const PreviousComponent = getRouteProps(routes, previousPath).route.component;
-    return <PreviousComponent {...props} />
-  }
-  console.log('not stale data');
-
-  return renderRoutes(routes, props);
+  return <MemoApp {...props} />;
 };
+
+const NewApp = props => renderRoutes(props.routes, props);
+const isPageDataTheSame = (prevProps, nextProps) => {
+  const isSame = equals(prevProps.pageData, nextProps.pageData);
+  console.log('isSame', isSame);
+  return isSame;
+};
+
+const MemoApp = memo(NewApp, isPageDataTheSame);
 
 export default withRouter(App);
