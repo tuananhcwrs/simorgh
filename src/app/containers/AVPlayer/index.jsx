@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, memo } from 'react';
 import { string } from 'prop-types';
 import {
   CanonicalMediaPlayer,
@@ -7,6 +7,8 @@ import {
 import pathOr from 'ramda/src/pathOr';
 import { RequestContext } from '#contexts/RequestContext';
 import { ServiceContext } from '#contexts/ServiceContext';
+
+const CanonicalPlayer = memo(CanonicalMediaPlayer, () => true);
 
 const AVPlayer = ({
   assetId,
@@ -32,6 +34,20 @@ const AVPlayer = ({
     translations,
   );
 
+  const [state, setState] = useState('notReady');
+  const [colour, message] = {
+    notReady: ['lightgrey', 'media not ready'],
+    initialised: ['skyblue', 'media ready'],
+    playing: ['lightgreen', 'media playing'],
+    paused: ['peachpuff', 'media paused'],
+    ended: ['tan', 'media ended'],
+  }[state];
+
+  const cb = newState => e => {
+    setState(newState);
+    console.log(e);
+  };
+
   if (!isValidPlatform || !assetId) return null;
 
   return (
@@ -46,7 +62,11 @@ const AVPlayer = ({
           service={service}
         />
       ) : (
-        <CanonicalMediaPlayer
+        <CanonicalPlayer
+          onMediaInitialised={cb('initialised')}
+          onMediaPlaying={cb('playing')}
+          onMediaPause={cb('paused')}
+          onMediaEnded={cb('ended')}
           showPlaceholder={false}
           src={embedUrl}
           title={iframeTitle}
@@ -55,8 +75,12 @@ const AVPlayer = ({
           mediaInfo={mediaInfo}
           noJsMessage={noJsMessage}
           noJsClassName="no-js"
+          acceptableEventOrigins={['polling.test.bbc.co.uk']}
         />
       )}
+      <div style={{ padding: 30, marginBottom: 30, backgroundColor: colour }}>
+        {message}
+      </div>
     </div>
   );
 };
