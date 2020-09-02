@@ -266,12 +266,6 @@ describe('addMpuBlock', () => {
 
     expect(addMpuBlock(input)).toEqual(expected);
   });
-  it('should return input if allowAdvertising is false', async () => {
-    const input = deepClone(styInput);
-    input.metadata.options.allowAdvertising = false;
-
-    expect(addMpuBlock(input)).toEqual(input);
-  });
   it('should return input if page type is not STY', async () => {
     const input = deepClone(styInput);
     input.metadata.type = 'PGL';
